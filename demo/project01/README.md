@@ -44,6 +44,11 @@ Download Python 3
 Mac - Activate Virtual Environment
 
     source ./.venv/bin/activate
+
+Your terminal prompt should show "(.venv)" when you activate the environment
+
+    (.venv) ~/Github/UNC-BACS-350
+    
     
 Windows - Activate Virtual Environment
 
@@ -53,7 +58,20 @@ Check your VENV
 
     pip freeze
     
+    certifi==2018.10.15
+    pipenv==2018.11.26
+    virtualenv==16.1.0
+    virtualenv-clone==0.3.0
+    
+Note that Django is missing
+    
+To deactivate the environment
+
     deactivate
+    
+Your terminal prompt should not show "(.venv)" when you deactivate the environment
+
+    ~/Github/UNC-BACS-350
     
 
 ### Step 3 - Install Django
@@ -61,6 +79,17 @@ Check your VENV
     pip install django
     
     pip freeze
+    
+    asgiref==3.2.10
+    certifi==2018.10.15
+    Django==3.0.8
+    pipenv==2018.11.26
+    pytz==2020.1
+    sqlparse==0.3.1
+    virtualenv==16.1.0
+    virtualenv-clone==0.3.0
+    
+Note that Django 3.0.8 is installed
     
 
 ### Step 4 - Start a Django Project
@@ -95,8 +124,12 @@ notes/views.py
 
 Terminal
 
+Run the web server
+
     python manage.py runserver
-    
+
+Run Firefox or Chrome
+
     browse to http://localhost:8000
     
 
