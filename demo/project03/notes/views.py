@@ -6,23 +6,7 @@ from notes.models import Note
 
 
 # -----------------------------------------
-# View Function
-
-def root_view(request):
-    html = "<h1>Hello, world.</h1>"
-    html += "<p>This is a simple HTML page.</p>"
-    html += '<p>Visit <a href="/views/">Default page</a>.</p>'
-    html += '<p>Visit <a href="/views/home">Home page</a>.</p>'
-    html += '<p>Visit <a href="/views/index">Index page</a>.</p>'
-    return HttpResponse(html)
-
-
-# -----------------------------------------
 # Custom Views
-
-class HomePage(TemplateView):
-    template_name = 'home.html'
-
 
 class IndexPage(TemplateView):
     template_name = 'index.html'
