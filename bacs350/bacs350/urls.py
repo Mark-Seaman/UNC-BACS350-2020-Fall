@@ -1,11 +1,12 @@
-from django.contrib import admin
 from django.urls import path
 
-from page.views import index, HomePage
+from page.views import IndexPage, HomePage, BearPage
 
 
 urlpatterns = [
-    path('', index),
+    
+    path('', IndexPage.as_view()),
     path('home', HomePage.as_view()),
+    path('bear', BearPage.as_view()),
     
 ]
