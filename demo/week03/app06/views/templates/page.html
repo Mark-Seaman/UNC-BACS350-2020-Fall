@@ -1,0 +1,39 @@
+{% extends 'page_theme.html' %}
+
+<!-- HEADER block -->
+{% block header %}
+<header>
+
+    <div class="container text-center p-25">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>{{ title }}</h1>
+                <h2>{{ subtitle }}</h2>
+            </div>
+            <div class="col-lg-3 text-right">
+                <img src="/static/Bear.png" width="100">
+            </div>
+        </div>
+
+    </div>
+</header>
+{% endblock header %}
+
+
+<!-- MAIN block -->
+{% block main %}
+
+<h1>{{ title }}</h1>
+<p>This is the main block within the page view.</p>
+
+{{ cards }}
+
+{% endblock main %}
+
+
+<!-- FOOTER block -->
+{% block footer %}
+<div class="container text-center">
+    <p>&copy; 2020 - <a href="https://shrinking-world.com">Shrinking World</a></p>
+</div>
+{% endblock footer %}
