@@ -4,9 +4,9 @@
 {% block header %}
 <header>
 
-    <div class="container text-center p-25">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <h1>{{ title }}</h1>
                 <h2>{{ subtitle }}</h2>
             </div>
@@ -22,18 +22,20 @@
 
 <!-- MAIN block -->
 {% block main %}
-
-<h1>{{ title }}</h1>
-<p>This is the main block within the page view.</p>
-
-{{ cards }}
-
+<main>
+    <h1>{{ title }}</h1>
+    <p>This is the main block within the page view.</p>
+    {{ text }}
+    {{ cards }}
+</main>
 {% endblock main %}
 
 
 <!-- FOOTER block -->
 {% block footer %}
-<div class="container text-center">
-    <p>&copy; 2020 - <a href="https://shrinking-world.com">Shrinking World</a></p>
-</div>
+<footer>
+    <div class="container text-center">
+        <p>&copy; 2020 - <a href="https://shrinking-world.com">Shrinking World</a></p>
+    </div>
+</footer>
 {% endblock footer %}
