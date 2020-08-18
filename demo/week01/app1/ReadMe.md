@@ -1,4 +1,4 @@
-# Build and Serve Simple Pages
+# Skill #1 - Build and Serve Simple Pages
 
 This is the world's simplest web app
 

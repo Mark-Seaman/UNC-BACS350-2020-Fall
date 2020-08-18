@@ -1,4 +1,4 @@
-# Create Pages from Templates
+# Skill #2 - Create Pages from Templates
 
 This is the world's simplest web app
 
