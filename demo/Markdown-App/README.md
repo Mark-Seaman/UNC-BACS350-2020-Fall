@@ -1,4 +1,4 @@
-# Demo 36 - Markdown Display
+# Markdown Display
 
 Application notes for learning about using Markdown within Django.
 
