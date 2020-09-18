@@ -1,0 +1,52 @@
+#!/bin/bash
+# Startup the BACS 350 dev environment
+
+# Start in the root directory
+export p=~/Github/UNC-BACS-350
+export code=$p/Superhero
+export docs=$p/docs
+export demo=$p/demo
+
+cd $p
+
+
+# Activate the Python Env
+source $p/.venv/bin/activate
+
+
+# Aliases
+alias e='brackets'
+alias code='d $code'
+alias docs='d $docs'
+alias demo='d $demo/week-4'
+alias gs='git status'
+alias wp='which python && pip freeze'
+alias l='ls -al'
+
+
+# Functions
+
+function co {
+    git status &&
+    git add -A . &&
+    git commit -m "$*" &&
+    git push
+}
+
+function d {
+    d=$1
+    [[ "$1" == "" ]] && d="$p"
+    echo $d && cd $d && ls -al
+}
+
+function dj {
+    cd $code && ./manage.py $*
+}
+
+# List the path in readable form
+function path {
+    echo $PATH | perl -pe s/:/\\n/g
+}
+
+figlet 'BACS 350'
+wp
