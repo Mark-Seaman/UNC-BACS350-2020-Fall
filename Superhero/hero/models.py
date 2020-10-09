@@ -7,3 +7,6 @@ class Superhero(models.Model):
     
     def __str__(self):
         return self.identity
+
+    def get_absolute_url(self): 
+        return reverse('hero_list', args=[str(self.id)])
