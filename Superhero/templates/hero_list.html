@@ -1,0 +1,24 @@
+{% extends 'page_theme.html' %}
+
+
+{% block main %}
+
+    <h1>Heroes Gallery</h1>
+    
+    {% for hero in object_list %}
+       
+        <h2>Hero - 
+            <a href="{{ hero.pk }}">{{ hero.name }}</a>
+        </h2>
+            <a href="{{ hero.pk }}/" class="btn btn-primary">Edit {{ hero.name }}</a>
+        <p>
+            This page shows my favorite hero.
+        </p>
+        <p>
+            Secret ID: {{ hero.identity }}
+        </p>
+        <img width="300" src="/static/images/{{ hero.name }}.jpg" alt="{{ hero.identity }}">
+    
+    {% endfor %}
+
+{% endblock main %}

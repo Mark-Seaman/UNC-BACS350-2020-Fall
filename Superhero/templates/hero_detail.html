@@ -1,0 +1,18 @@
+{% extends 'page_theme.html' %}
+
+
+{% block main %}
+   <a href="/">Hero List</a>
+
+    <h1>Hero Profile</h1>
+
+    <h2>Hero - {{ object.name }}</h2>
+    <p>
+        This page shows my favorite hero.
+    </p>
+    <p>
+        Secret ID: {{ object.identity }}
+    </p>
+    <img width="300" src="/static/images/{{ object.name }}.jpg" alt="{{ object.identity }}">
+
+{% endblock main %}
