@@ -16,7 +16,7 @@
                             <a href="{{ hero.pk }}">Hero: {{ hero.name }}</a>
                         </h2>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body bg-dark text-light">
                         <a href="{{ hero.pk }}/" class="btn btn-primary">Edit {{ hero.name }}</a>
                         <p>
                             This page shows my favorite hero.
@@ -24,8 +24,8 @@
                         <p>
                             Secret ID: {{ hero.identity }}
                         </p>
-                        <img width="300" src="/static/images/{{ hero.name }}.jpg" alt="{{ hero.identity }}">
-                        <p><i class="fa fa-user fa-6x"></i></p>
+                        <pre>URL: /static/{{ hero.image }}</pre>
+                        <img width="300" src="/static/{{ hero.image }}" alt="{{ hero.identity }}">
                     </div>
                 </div>   
 
