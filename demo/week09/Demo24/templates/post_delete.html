@@ -1,9 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'theme.html' %}
 
-{% block content %}
+{% block main %}
+   
     <h1>Delete post</h1>
+    
     <form action="" method="post">{% csrf_token %}
-      <p>Are you sure you want to delete "{{ post.title }}"?</p>
-      <input type="submit" value="Confirm">
+          <p>Are you sure you want to delete "{{ post.title }}"?</p>
+          <input type="submit" value="Confirm">
     </form>
-{% endblock content %}
+    
+{% endblock main %}

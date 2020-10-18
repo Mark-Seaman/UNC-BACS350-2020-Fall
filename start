@@ -40,7 +40,7 @@ function d {
 }
 
 function dj {
-    cd $code && ./manage.py $*
+    python ./manage.py $*
 }
 
 # List the path in readable form
