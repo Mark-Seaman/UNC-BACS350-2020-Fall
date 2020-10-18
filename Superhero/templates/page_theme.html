@@ -11,35 +11,35 @@
     href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 </head>
 
-<body>
+<body class="bg-dark text-light">
 
     {% block content %}
 
         {% block header %}
-        <header class="bg-primary text-light p-3 mb-5">
-            <div class="row media">
-                <div class="media-body">
-                    <h1 class="display-4 ml-5">
-                        <a href="/" class="text-light">Heroes</a>
-                    </h1>
-                    <h2 class="display-6 ml-5">My Favorite Heroes</h2>
+            <header class="bg-primary text-light p-3 mb-5">
+                <div class="row media">
+                    <div class="media-body">
+                        <h1 class="display-4 ml-5">
+                            <a href="/" class="text-light">Hero Gallery</a>
+                        </h1>
+                        <h2 class="display-6 ml-5">My Favorite Heroes</h2>
+                    </div>
+                    <div class="text-right">
+                        <i class="fa fa-user fa-4x"></i>
+                    </div>
                 </div>
-                <div class="text-right">
-                    <i class="fa fa-user fa-4x"></i>
-                </div>
-            </div>
-        </header>
+            </header>
         {% endblock header %}
 
         {% block main %}
-        <h2>NO MAIN DEFINED</h2>
+            <h2>NO MAIN DEFINED</h2>
         {% endblock main %}
 
         {% block footer %}
-        <footer class="text-center m-5">
-            &copy;2020 <a href="https://shrinking-world.com">Shrinking World</a>
-            - Practical Software Engineering
-        </footer>
+            <footer class="text-center bg-dark text-light m-5">
+                &copy;2020 <a href="https://shrinking-world.com">Shrinking World</a>
+                - Practical Software Engineering
+            </footer>
         {% endblock footer %}
 
     {% endblock content %}

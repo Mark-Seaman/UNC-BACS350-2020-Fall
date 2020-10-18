@@ -6,26 +6,29 @@
    <main class="bg-dark text-light">
        <div class="container text-center">
            
-            <h1>Heroes Gallery</h1>
-
             {% for hero in object_list %}
                 
                 <div class="card m-5">
-                    <div class="card-header">
-                        <h2>Hero - 
-                            <a href="{{ hero.pk }}">Hero: {{ hero.name }}</a>
+                    <div class="card-header bg-primary">
+                        <h2> 
+                            <a class="text-light" href="{{ hero.pk }}">{{ hero.name }}</a>
                         </h2>
                     </div>
-                    <div class="card-body bg-dark text-light">
-                        <a href="{{ hero.pk }}/" class="btn btn-primary">Edit {{ hero.name }}</a>
+                    <div class="card-body bg-light text-dark">
+                       
                         <p>
-                            This page shows my favorite hero.
+                            Hero: {{ hero.name }}
                         </p>
                         <p>
                             Secret ID: {{ hero.identity }}
                         </p>
-                        <pre>URL: /static/{{ hero.image }}</pre>
+                        
+                        {% if missing %}
+                            <p class="border"><i class="fa fa-user fa-6x"></i></p>
+                        {% endif %}
+
                         <img width="300" src="/static/{{ hero.image }}" alt="{{ hero.identity }}">
+                    
                     </div>
                 </div>   
 
