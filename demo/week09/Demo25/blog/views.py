@@ -16,24 +16,28 @@ class BlogDetailView(DetailView):
     template_name = 'post_detail.html'
 
     
-class BlogCreateView(CreateView):
+class BlogCreateView(LoginRequiredMixin, CreateView):
     model = Post
     template_name = 'post_new.html'
-    fields = ['title', 'author', 'body']
+    fields = '__all__'
 
+    def form_valid(self, form):
+        form.instance.author_id = self.request.user.pk
+        return super().form_valid(form)
     
-class BlogUpdateView(UpdateView):
+
+class BlogUpdateView(LoginRequiredMixin, UpdateView):
     model = Post
     template_name = 'post_edit.html'
-    fields = ['title', 'body']
+    fields = '__all__'
     
 
-class BlogDeleteView(DeleteView): 
+class BlogDeleteView(LoginRequiredMixin, DeleteView): 
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
     
-    
+   
     
 # Customize the views
 
@@ -48,9 +52,6 @@ class BlogDeleteView(DeleteView):
 #        return obj.author == self.request.user
 
 
-#def form_valid(self, form):
-#        form.instance.author = self.request.user
-#        return super().form_valid(form)
 #
 
 # def get_context_data(self, **kwargs):
