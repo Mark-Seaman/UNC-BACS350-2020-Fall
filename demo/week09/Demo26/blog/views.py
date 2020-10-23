@@ -8,7 +8,7 @@ from .models import Post
 
 class BlogListView(ListView):
     model = Post
-    template_name = 'home.html'
+    template_name = 'post_list.html'
 
 
 class BlogDetailView(DetailView):
@@ -18,7 +18,7 @@ class BlogDetailView(DetailView):
     
 class BlogCreateView(LoginRequiredMixin, CreateView):
     model = Post
-    template_name = 'post_new.html'
+    template_name = 'post_add.html'
     fields = '__all__'
 
     def form_valid(self, form):
@@ -35,26 +35,5 @@ class BlogUpdateView(LoginRequiredMixin, UpdateView):
 class BlogDeleteView(LoginRequiredMixin, DeleteView): 
     model = Post
     template_name = 'post_delete.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('post_list')
     
-   
-    
-# Customize the views
-
-# fields = '__all__'
-
-# Use LoginRequiredMixin, 
-
-
-# Use UserPassesTestMixin, 
-#def test_func(self): 
-#        obj = self.get_object()
-#        return obj.author == self.request.user
-
-
-#
-
-# def get_context_data(self, **kwargs):
-#        kwargs = super().get_context_data()
-#        kwargs['title'] = 'Page Title'
-#        return kwargs
