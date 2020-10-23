@@ -18,6 +18,55 @@
 <body class="bg-dark text-light">
     {% block content %}
 
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <div class="container">
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <a href="{{ menu.url }}" class="navbar-brand">Blog App</a>
+
+                    <ul class="navbar-nav ml-auto">
+
+                        {% for i in menu.menu_items %}
+                        <li class="nav-item {{ i.active }}">
+                            <a href="{{ i.url }}" class="nav-link">{{ i.label }}</a>
+                        </li>
+                        {% endfor %}
+
+
+                        {% block user %}
+                            {% if user.is_authenticated %}
+                                <li class="nav-item active">
+                                    <span class="nav-link p-2 m-2">Welcome {{ user.username }}</span>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'logout' %}" class=" nav-link text-light p-2 m-2">
+                                        <i class="fas fa-sign-out-alt"></i> Log out
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
+                                    <span class="nav-link p-2 m-2">You are not logged in.</span>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a href="{% url 'login' %}" class="nav-link text-light p-2 m-2">
+                                        <i class="fas fa-sign-in-alt"></i> Log In
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock user %}
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
         {% block header %}
         <header class="bg-primary p-3 mb-5">
             <div class="row media">
@@ -29,6 +78,7 @@
             </div>
         </header>
         {% endblock header %}
+
 
 
         <main>
