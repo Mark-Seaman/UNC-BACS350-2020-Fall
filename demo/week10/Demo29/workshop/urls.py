@@ -1,6 +1,7 @@
 from django.urls import path
 
-from .views import AccordionView, CardView, CardsView,HomeView, MarkdownView, SuperView, TabView
+from .views import CardView, CardsView, HomeView
+#AccordionView,  ,, MarkdownView, SuperView, TabView
 
 
 urlpatterns = [

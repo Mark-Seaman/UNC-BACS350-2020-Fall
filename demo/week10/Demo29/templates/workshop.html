@@ -1,83 +1,11 @@
 {% extends 'theme.html' %}
 
 
-
-{% block content %}
-   
-    <header class="bg-success p-3 mb-5">
-        <div class="media-body">
-            <h1>
-                <a href="{% url 'workshop' %}" class="text-light ml-3">
-                    View Workshop
-                </a>
-            </h1>
-            <h2 class="text-light ml-3">Demos of Composite Views</h2>
-        </div>
-    </header>
+{% block main %}
+    <h1 class='text-light'>Workshop</h1>
+    <ul>
+        <li><a href="card">Card View</a></li>
+        <li><a href="cards">Cards View</a></li>
+    </ul>
     
-    <div class="container">
-
-        <h1> View Workshop</h1>
-        <p>
-            This page is to demonstrate how to build complex views with many layers.
-            Django makes it easy to composite view that are driven by data.
-        </p>
-
-        <ul>
-            <li>
-                <a href="card" class="text-warning">Card Layout View</a>
-            </li>
-<!--
-            <li>
-                <a href="cards" class="text-warning">Cards Layout View</a>
-            </li>
-            <li>
-                <a href="accordion" class="text-warning">Accordion View</a>
-            </li>
-            <li>
-                <a href="tabs" class="text-warning">Tabs View</a>
-            </li>
-             <li>
-                <a href="markdown" class="text-warning">Markdown Document View</a>
-            </li>
-             <li>
-                <a href="super" class="text-warning">Super View</a>
-            </li>
--->
-        </ul>
-        
-        {% block main %}
-        {% endblock main %}
-
-    </div>
-    
-{% endblock content %}
-
-
-    <!--  Columns
-    
-        <div class="container">
-            <div class="row">
-                <div class="col"><h2>Column 1</h2> {{ text }}</div>
-                <div class="col"><h2>Column 2</h2>  {{ text }}</div>
-                <div class="col"><h2>Column 3</h2>  {{ text }}</div>
-            </div>
-        </div>
-    
-     -->
-
-    <!--  Responsive Columns
-    
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 bg-dark text-light">
-                    <h2>Column 1</h2> 
-                    {{ text }}
-                </div>
-                <div class="col-lg-8">
-                    <h2>Column 2</h2>  
-                    {{ text }}
-                </div>
-            </div>
-        </div>
-     -->
+{% endblock main %}

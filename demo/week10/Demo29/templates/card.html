@@ -2,22 +2,48 @@
 
 {% block main %}
 
-    <h2> Card Layout View</h2>
+    <main class="bg-dark text-light">
 
-    <div class="container">
+        <h2>{{ title }}</h2>
 
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-header bg-primary text-light">
-                    <h2>{{ card.title}}</h2>
+<!--        <div class="container">-->
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-success text-light">
+                            <h2>{{ card.title}}</h2>
+                        </div>
+                        <div class="card-body bg-light text-dark">
+                            <p>{{ card.body }}</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <p>{{ card.body }}</p>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-success text-light">
+                            <h2>{{ card.title}}</h2>
+                        </div>
+                        <div class="card-body bg-light text-dark">
+                            <p>{{ card.body }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-success text-light">
+                            <h2>{{ card.title}}</h2>
+                        </div>
+                        <div class="card-body bg-light text-dark">
+                            <p>{{ card.body }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
 
+<!--        </div>-->
+
+    </main>
 {% endblock main %}
-
