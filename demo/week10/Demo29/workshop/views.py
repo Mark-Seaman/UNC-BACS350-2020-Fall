@@ -13,44 +13,61 @@ class CardView(TemplateView):
     template_name = 'cards.html'
 
     def get_context_data(self, **kwargs):
-        return dict(cards=cards_data())
+        data = dict(title="Life is Great", body=text)
+        return dict(card=data)
 
 
-class AccordionView(TemplateView):
-    template_name = 'accordion.html'
 
-    def get_context_data(self, **kwargs):
-        return dict(accordion=accordion_data())
+#class CardsView(TemplateView):
+#    template_name = 'cards.html'
+#
+#    def get_context_data(self, **kwargs):
+#        return dict(cards=cards_data())
 
-    
-class TabView(TemplateView):
-    template_name = 'tabs.html'
 
-    def get_context_data(self, **kwargs):
-        return dict(tabs=tabs_data())
-    
-    
-class MarkdownView(TemplateView):
-    template_name = 'markdown.html'
 
-    def get_context_data(self, **kwargs):
-        md_doc = "README.md"
-        return dict(markdown=markdown_data(md_doc))
-    
+#def cards_data():
+#    return [
+#                dict(title="Card 1", body=text),
+#                dict(title="Card 2", body=text),
+#                dict(title="Card 3", body=text),
+#            ]
 
-class SuperView(TemplateView):
-    template_name = 'superview.html'
-
-    def get_context_data(self, **kwargs):
-        return dict(markdown=markdown_data('README.md'), 
-                    accordion=accordion_data(),
-                    cards=cards_data(),
-                    tabs=tabs_data())
-    
-    
-def markdown_data(doc):
-    return dict(title=doc, html=markdown(open(doc).read()))
- 
+#class MarkdownView(TemplateView):
+#    template_name = 'markdown.html'
+#
+#    def get_context_data(self, **kwargs):
+#        md_doc = "README.md"
+#        return dict(markdown=markdown_data(md_doc))
+#    
+#class AccordionView(TemplateView):
+#    template_name = 'accordion.html'
+#
+#    def get_context_data(self, **kwargs):
+#        return dict(accordion=accordion_data())
+#
+#    
+#class TabView(TemplateView):
+#    template_name = 'tabs.html'
+#
+#    def get_context_data(self, **kwargs):
+#        return dict(tabs=tabs_data())
+#    
+#    
+#
+#class SuperView(TemplateView):
+#    template_name = 'superview.html'
+#
+#    def get_context_data(self, **kwargs):
+#        return dict(markdown=markdown_data('README.md'), 
+#                    accordion=accordion_data(),
+#                    cards=cards_data(),
+#                    tabs=tabs_data())
+#    
+#    
+#def markdown_data(doc):
+#    return dict(title=doc, html=markdown(open(doc).read()))
+# 
     
 def cards_data():
     return [
@@ -60,29 +77,29 @@ def cards_data():
             ]
    
     
-def accordion_data():
-
-    def card_content(i, active):
-        card = dict(id=i, title=f'Week {i+1}', body=text)
-        if i == active:
-            card['show'] = 'show'
-            card['active'] = 'true'
-        return card
-
-    return [card_content(i, 0) for i in range(7)]
-
-
-def tabs_data():
-
-    def options(i, tab, selected):
-        if selected:
-            return dict(name=f'tab{i}', header=tab[0], body=tab[1],
-                        active='active', show='show', selected='true')
-        else:
-            return dict(name=f'tab{i}', header=tab[0], body=tab[1],
-                        active='', show='', selected='false')
-
-    tabs = ('Tab 1', text), ('Tab 2', text)
-    return [options(i, tab, i == 0) for i, tab in enumerate(tabs)]
-
+#def accordion_data():
+#
+#    def card_content(i, active):
+#        card = dict(id=i, title=f'Week {i+1}', body=text)
+#        if i == active:
+#            card['show'] = 'show'
+#            card['active'] = 'true'
+#        return card
+#
+#    return [card_content(i, 0) for i in range(7)]
+#
+#
+#def tabs_data():
+#
+#    def options(i, tab, selected):
+#        if selected:
+#            return dict(name=f'tab{i}', header=tab[0], body=tab[1],
+#                        active='active', show='show', selected='true')
+#        else:
+#            return dict(name=f'tab{i}', header=tab[0], body=tab[1],
+#                        active='', show='', selected='false')
+#
+#    tabs = ('Tab 1', text), ('Tab 2', text)
+#    return [options(i, tab, i == 0) for i, tab in enumerate(tabs)]
+#
 
