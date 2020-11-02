@@ -6,16 +6,16 @@ def lorem(num_chars):
     return text[:num_chars]
     
     
-def card_data():
-    return dict(title="Card Layout", body=lorem(200), color="bg-success")
+def card_data(title="Random Card", body=lorem(400), color='bg-primary', width='col-lg-12'):
+    return dict(title=title, body=body, color=color, width=width)
 
 
 def cards_data():
     return [
-                dict(title="Card One", body=lorem(200), color="bg-success"),
-                dict(title="Card Two", body=lorem(150), color="bg-primary"),
-                dict(title="Card Three", body=lorem(350), color="bg-warning"),
-                dict(title="Card Four", body=lorem(500), color="bg-danger"),
+                card_data(),
+                card_data("Card Two", lorem(150)),
+                card_data("Card Three", lorem(350), "bg-success"),
+                card_data("Card Four", lorem(500), "bg-danger"),
             ]
 
 

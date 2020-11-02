@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+from markdown import markdown
 
 from .workshop import card_data, cards_data, markdown_data
 
@@ -26,6 +27,14 @@ class MarkdownView(TemplateView):
     def get_context_data(self, **kwargs):
         md_doc = "README.md"
         return dict(markdown=markdown_data(md_doc))
+
+class DocView(TemplateView):
+    template_name = 'markdown.html'
+
+    def get_context_data(self, **kwargs):
+        doc = "README.md"
+        card = dict(title='Doc view', body=markdown(open(doc).read()), color='bg-danger', width='col-lg-12')
+        return dict(card=card)
 
     
 # class AccordionView(TemplateView):
