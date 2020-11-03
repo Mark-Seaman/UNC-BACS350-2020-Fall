@@ -1,5 +1,4 @@
 from markdown import markdown
-from os.path import exists
 
 
 def lorem(num_chars):
@@ -15,18 +14,40 @@ def card_data(title="Random Card", body=lorem(400), color='bg-primary', width='c
 def cards_data():
     return [
                 card_data(),
-                card_data("Card Two",   lorem(150), "bg-warning", 'col-lg-4'),
+                card_data("Card Two", lorem(150)),
                 card_data("Card Three", lorem(350), "bg-success", 'col-lg-4'),
-                card_data("Card Four",  lorem(500), "bg-danger",  'col-lg-4'),
+                card_data("Card Four", lorem(500), "bg-danger", 'col-lg-4'),
             ]
 
 
-def markdown_file_data(doc):
-    if not exists(doc):
-        text = '# 404 is for Losers!'
-    else:
-        text = markdown(open(doc).read())
-    title = f'Document - {doc}'
-    card = card_data(title, text, 'bg-danger', 'col-lg-12') 
-    return dict(card=card)
+def markdown_data(doc):
+    return dict(title=doc, html=markdown(open(doc).read()))
+
+
+
+#def accordion_data():
+#
+#    def card_content(i, active):
+#        card = dict(id=i, title=f'Week {i+1}', body=text)
+#        if i == active:
+#            card['show'] = 'show'
+#            card['active'] = 'true'
+#        return card
+#
+#    return [card_content(i, 0) for i in range(7)]
+#
+#
+#def tabs_data():
+#
+#    def options(i, tab, selected):
+#        if selected:
+#            return dict(name=f'tab{i}', header=tab[0], body=tab[1],
+#                        active='active', show='show', selected='true')
+#        else:
+#            return dict(name=f'tab{i}', header=tab[0], body=tab[1],
+#                        active='', show='', selected='false')
+#
+#    tabs = ('Tab 1', text), ('Tab 2', text)
+#    return [options(i, tab, i == 0) for i, tab in enumerate(tabs)]
+#
 

@@ -10,6 +10,11 @@ urlpatterns = [
     path('card',  CardView.as_view(), name='card'),
     path('cards',  CardsView.as_view(), name='cards'),
     
-#    path('doc/<str:doc>',  DocumentView.as_view(), name='doc'),
     path('doc',  DocumentView.as_view(), name='doc'),
+    
+    
+#    path('accordion',  AccordionView.as_view(), name='accordion'),
+#    path('tabs',  TabView.as_view(), name='tabs'),
+#    path('super',  SuperView.as_view(), name='super'),
+    
 ]
