@@ -7,15 +7,16 @@ def lorem(num_chars):
     
     
 def card_data(title="Random Card", body=lorem(400), color='bg-primary', width='col-lg-12'):
-    return dict(title=title, body=body, color=color, width=width)
+    html = markdown(body)
+    return dict(title=title, body=html, color=color, width=width)
 
 
 def cards_data():
     return [
                 card_data(),
                 card_data("Card Two", lorem(150)),
-                card_data("Card Three", lorem(350), "bg-success"),
-                card_data("Card Four", lorem(500), "bg-danger"),
+                card_data("Card Three", lorem(350), "bg-success", 'col-lg-4'),
+                card_data("Card Four", lorem(500), "bg-danger", 'col-lg-4'),
             ]
 
 

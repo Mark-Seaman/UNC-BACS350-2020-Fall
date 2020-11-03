@@ -20,20 +20,14 @@ class CardsView(TemplateView):
     def get_context_data(self, **kwargs):
         return dict(cards=cards_data())
 
-    
-class MarkdownView(TemplateView):
-    template_name = 'markdown.html'
 
-    def get_context_data(self, **kwargs):
-        md_doc = "README.md"
-        return dict(markdown=markdown_data(md_doc))
-
-class DocView(TemplateView):
+class DocumentView(TemplateView):
     template_name = 'markdown.html'
 
     def get_context_data(self, **kwargs):
         doc = "README.md"
-        card = dict(title='Doc view', body=markdown(open(doc).read()), color='bg-danger', width='col-lg-12')
+        text = open(doc).read()
+        card = card_data('Doc view', text, 'bg-danger', 'col-lg-12') 
         return dict(card=card)
 
     
