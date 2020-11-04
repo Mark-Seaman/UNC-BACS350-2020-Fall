@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import CardView, CardsView, DocumentView, HomeView
+from .views import CardView, CardsView, DocumentView, HomeView, TableView
 
 
 urlpatterns = [
@@ -12,4 +12,6 @@ urlpatterns = [
     
 #    path('doc/<str:doc>',  DocumentView.as_view(), name='doc'),
     path('doc',  DocumentView.as_view(), name='doc'),
+    
+    path('table',  TableView.as_view(), name='table'),
 ]

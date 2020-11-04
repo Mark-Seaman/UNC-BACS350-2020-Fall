@@ -1,3 +1,4 @@
+from csv import reader
 from markdown import markdown
 from os.path import exists
 
@@ -29,4 +30,8 @@ def markdown_file_data(doc):
     title = f'Document - {doc}'
     card = card_data(title, text, 'bg-danger', 'col-lg-12') 
     return dict(card=card)
+
+
+def table_data(path):
+    return reader(open(path))
 

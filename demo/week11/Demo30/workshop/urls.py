@@ -12,4 +12,5 @@ urlpatterns = [
     
 #    path('doc/<str:doc>',  DocumentView.as_view(), name='doc'),
     path('doc',  DocumentView.as_view(), name='doc'),
+    
 ]
