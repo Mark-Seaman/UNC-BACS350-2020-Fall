@@ -25,14 +25,14 @@ class DocumentView(TemplateView):
     template_name = 'markdown.html'
 
     def get_context_data(self, **kwargs):
-        doc = kwargs.get('doc', "README.md")
+        doc = kwargs.get('doc', "REAsDME.md")
         return markdown_file_data(doc)
         
         
 class TableView(TemplateView):
-    template_name = '_table.html'
+    template_name = 'table.html'
     
     def get_context_data(self, **kwargs):
-        return dict(table=table_data('lessons.csv'))
+        return dict(table=table_data('Documents/lessons.csv'))
     
     

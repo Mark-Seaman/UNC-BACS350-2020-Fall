@@ -1,11 +1,18 @@
-<table>
-    {% for row in table %}
-        <tr>
-            {% for column in row %}
+<div class="card">
+    <div class="card-header bg-dark">
+        <h2>Table Contents</h2>
+    </div>
+    <div class="card-body text-dark">
+        <table class="table table-hover">
+            {% for row in table %}
+            <tr>
+                {% for column in row %}
                 <td>
                     {{ column }}
                 </td>
+                {% endfor %}
+            </tr>
             {% endfor %}
-        </tr>
-    {% endfor %}
-</table>
+        </table>
+    </div>
+</div>

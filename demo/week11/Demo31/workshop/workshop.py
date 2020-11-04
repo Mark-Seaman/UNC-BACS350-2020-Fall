@@ -23,15 +23,16 @@ def cards_data():
 
 
 def markdown_file_data(doc):
+    doc = 'Documents/' + doc
     if not exists(doc):
         text = '# 404 is for Losers!'
     else:
         text = markdown(open(doc).read())
     title = f'Document - {doc}'
-    card = card_data(title, text, 'bg-danger', 'col-lg-12') 
+    card = card_data(title, text, 'bg-success', 'col-lg-12') 
     return dict(card=card)
 
 
 def table_data(path):
-    return reader(open(path))
+    return [row[:5] for row in reader(open(path))]
 
