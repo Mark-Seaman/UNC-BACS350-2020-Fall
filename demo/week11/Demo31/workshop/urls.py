@@ -14,8 +14,4 @@ urlpatterns = [
     
     path('table',  TableView.as_view(), name='table'),
     
-    path('tabs',  TableView.as_view(), name='tabs'),
-    path('accordion',  TableView.as_view(), name='accordion'),
-    path('carousel',  TableView.as_view(), name='carousel'),
-    
 ]

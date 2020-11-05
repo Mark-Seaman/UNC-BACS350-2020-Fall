@@ -2,7 +2,7 @@
 
 Demonstrate Design Patterns
 
-### 1. Workshop
+## 1. Workshop
 * The workshop view inherits from the "theme.html" template
 * It adds a menu of choices to every page
 * Links go to demo pages
@@ -14,7 +14,7 @@ Demonstrate Design Patterns
 * Wrap the main content in a container
 
 
-### 3. Grid Layout 
+## 3. Grid Layout 
 * Add "row" and "col"
 * A row will fit items horizontally
 * Start with equal width
@@ -28,14 +28,14 @@ Demonstrate Design Patterns
 * Test the response to resizing the view
 
 
-### 5. Card Layout
+# 5. Card Layout
 
 * Use class "col-lg-6" for half width
 * Test the response to resizing the view
 * Unequal sizes that also stack vertically
 
 
-### 6. Multiple Card Layout
+## 6. Multiple Card Layout
 
 * Use class "col-lg-6" for half width
 * Iterate over all cards
