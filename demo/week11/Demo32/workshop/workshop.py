@@ -64,7 +64,7 @@ def tabs_data():
                         active='', show='', selected='false')
     
     def set_options(tabs):
-        return [options(i, tab, i == 0) for i, tab in enumerate(tabs)]
+        return [options(i, tab, i == 2) for i, tab in enumerate(tabs)]
     
     return set_options(cards_data())
 
