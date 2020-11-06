@@ -40,10 +40,10 @@ class TableView(TemplateView):
 class TabsView(TemplateView):
     template_name = 'tabs.html'
     
-    def get_context_data(self, **kwargs):
-        doc = 'Documents/README.md'
-        tabs = tabs_data()
-        return dict(title='Tab View', doc=doc, tabs=tabs)
+#    def get_context_data(self, **kwargs):
+#        doc = 'Documents/README.md'
+#        tabs = tabs_data()
+#        return dict(title='Tab View', doc=doc, tabs=tabs)
 
     
 class CarouselView(TemplateView):
@@ -53,5 +53,5 @@ class CarouselView(TemplateView):
 class AccordionView(TemplateView):
     template_name = 'accordion.html'
     
-    def get_context_data(self, **kwargs):
-        return dict(accordion=accordion_data())
+#    def get_context_data(self, **kwargs):
+#        return dict(accordion=accordion_data())
