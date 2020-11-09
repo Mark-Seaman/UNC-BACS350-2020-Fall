@@ -47,7 +47,18 @@ class TabsView(TemplateView):
     
 class CarouselView(TemplateView):
     template_name = 'carousel.html'
+    
+    def get_context_data(self, **kwargs):
+        carousel = carousel_data()
+        return dict(title='Carousel View', carousel=carousel)
+    
 
+def carousel_data():
+    return [["https://source.unsplash.com/random/1200x800?bear", "active"],
+            ["https://source.unsplash.com/random/1200x800?forest", ''], 
+            ["https://source.unsplash.com/random/1200x800?ocean"],
+           ["https://source.unsplash.com/random/1200x800?flower"],
+           ["https://images.unsplash.com/photo-1604932292784-ce6b48294afc"]]
     
 class AccordionView(TemplateView):
     template_name = 'accordion.html'
