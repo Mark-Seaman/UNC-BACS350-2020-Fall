@@ -41,9 +41,8 @@ class TabsView(TemplateView):
     template_name = 'tabs.html'
     
     def get_context_data(self, **kwargs):
-        doc = 'Documents/README.md'
         tabs = tabs_data()
-        return dict(title='Tab View', doc=doc, tabs=tabs)
+        return dict(title='Tab View', tabs=tabs)
 
     
 class CarouselView(TemplateView):
