@@ -37,6 +37,13 @@ def cards_data():
             ]
 
 
+def carousel_data():
+    return [["https://source.unsplash.com/random/1200x800?bear", "active"],
+            ["https://source.unsplash.com/random/1200x800?forest", ''], 
+            ["https://source.unsplash.com/random/1200x800?ocean"],
+           ["https://source.unsplash.com/random/1200x800?flower"],
+           ["https://images.unsplash.com/photo-1604932292784-ce6b48294afc"]]
+    
     
 def markdown_file_data(doc):
     doc = 'Documents/' + doc
@@ -45,8 +52,7 @@ def markdown_file_data(doc):
     else:
         text = markdown(open(doc).read())
     title = f'Document - {doc}'
-    card = card_data(title, text, 'bg-success', 'col-lg-12') 
-    return dict(card=card)
+    return card_data(title, text, 'bg-success', 'col-lg-12') 
 
 
 def table_data(path):
@@ -64,8 +70,13 @@ def tabs_data():
                         active='', show='', selected='false')
     
     def set_options(tabs):
-        return [options(i, tab, i == 2) for i, tab in enumerate(tabs)]
+        return [options(i, tab, i == 0) for i, tab in enumerate(tabs)]
     
     return set_options(cards_data())
 
 
+def super_data():
+    return dict(card=markdown_file_data("README.md"), 
+                table=table_data('Documents/lessons.csv'),
+                carousel=carousel_data(),
+                tabs=tabs_data())

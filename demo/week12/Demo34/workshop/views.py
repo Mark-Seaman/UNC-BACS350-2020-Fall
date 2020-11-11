@@ -1,6 +1,6 @@
 from django.views.generic import TemplateView
 
-from .workshop import accordion_data, card_data, cards_data, markdown_file_data, table_data, tabs_data
+from .workshop import accordion_data, card_data, cards_data, markdown_file_data, super_data, table_data, tabs_data
 
 
 class HomeView(TemplateView):
@@ -25,6 +25,8 @@ class DocumentView(TemplateView):
     template_name = 'markdown.html'
 
     def get_context_data(self, **kwargs):
+#        menu = load_menu(page)
+#        sidemenu = load_side_menu(page)
         doc = kwargs.get('doc', "README.md")
         return markdown_file_data(doc)
         
@@ -53,20 +55,12 @@ class CarouselView(TemplateView):
         return dict(title='Carousel View', carousel=carousel)
     
 
-def carousel_data():
-    return [["https://source.unsplash.com/random/1200x800?bear", "active"],
-            ["https://source.unsplash.com/random/1200x800?forest", ''], 
-            ["https://source.unsplash.com/random/1200x800?ocean"],
-           ["https://source.unsplash.com/random/1200x800?flower"],
-           ["https://images.unsplash.com/photo-1604932292784-ce6b48294afc"]]
-    
     
 class SuperView(TemplateView):
     template_name = 'super.html'
     
     def get_context_data(self, **kwargs):
-        return dict(card=card_data(), table=table_data('Documents/lessons.csv'))
-
+        return super_data()
 
     
 class AccordionView(TemplateView):

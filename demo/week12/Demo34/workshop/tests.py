@@ -1,3 +1,4 @@
 from django.test import TestCase
 
-# Create your tests here.
+def quick_test():
+    print('Quick Test')
