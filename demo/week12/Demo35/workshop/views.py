@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 
 from .workshop import accordion_data, card_data, cards_data, markdown_file_data, super_data, table_data, tabs_data
+from .menu import load_menu, load_side_menu
 
 
 class HomeView(TemplateView):
@@ -22,13 +23,13 @@ class CardsView(TemplateView):
 
 
 class DocumentView(TemplateView):
-    template_name = 'markdown.html'
+    template_name = 'super.html'
 
     def get_context_data(self, **kwargs):
-#        menu = load_menu(page)
-#        sidemenu = load_side_menu(page)
+        menu = load_menu('README.md')
+        sidemenu = load_side_menu('README.md')
         doc = kwargs.get('doc', "README.md")
-        return markdown_file_data(doc)
+        return dict(card=markdown_file_data(doc), menu=menu, sidemenu=sidemenu)
         
         
 class TableView(TemplateView):
