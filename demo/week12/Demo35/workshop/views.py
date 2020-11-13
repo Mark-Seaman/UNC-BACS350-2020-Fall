@@ -9,17 +9,17 @@ class HomeView(TemplateView):
 
     
 class CardView(TemplateView):
-    template_name = 'card.html'
+    template_name = 'super.html'
 
     def get_context_data(self, **kwargs):
-        return dict(card=card_data())
+        return dict(card=card_data(),menu = load_menu('README.md'))
 
 
 class CardsView(TemplateView):
-    template_name = 'cards.html'
+    template_name = 'super.html'
 
     def get_context_data(self, **kwargs):
-        return dict(cards=cards_data())
+        return dict(cards=cards_data(), menu = load_menu('README.md'))
 
 
 class DocumentView(TemplateView):
@@ -27,25 +27,27 @@ class DocumentView(TemplateView):
 
     def get_context_data(self, **kwargs):
         menu = load_menu('README.md')
-        sidemenu = load_side_menu('README.md')
+#        sidemenu = load_side_menu('README.md')
         doc = kwargs.get('doc', "README.md")
-        return dict(card=markdown_file_data(doc), menu=menu, sidemenu=sidemenu)
+        return dict(card=markdown_file_data(doc), menu=menu)
+#    , sidemenu=sidemenu)
         
         
 class TableView(TemplateView):
-    template_name = 'table.html'
+    template_name = 'super.html'
     
     def get_context_data(self, **kwargs):
         return dict(title='Lessons Schedule', 
-                    table=table_data('Documents/lessons.csv'))
+                    table=table_data('Documents/lessons.csv'),
+                   menu = load_menu('README.md'))
     
     
 class TabsView(TemplateView):
-    template_name = 'tabs.html'
+    template_name = 'super.html'
     
     def get_context_data(self, **kwargs):
         tabs = tabs_data()
-        return dict(title='Tab View', tabs=tabs)
+        return dict(title='Tab View', tabs=tabs, menu = load_menu('README.md'))
 
     
 class CarouselView(TemplateView):
@@ -53,7 +55,7 @@ class CarouselView(TemplateView):
     
     def get_context_data(self, **kwargs):
         carousel = carousel_data()
-        return dict(title='Carousel View', carousel=carousel)
+        return dict(title='Carousel View', carousel=carousel, menu = load_menu('README.md'))
     
 
     
