@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>BUILD</title>
+        <title>UNC Course Slides</title>
 
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reset.css">
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reveal.css">
@@ -32,7 +32,7 @@
                 
                     <section>
     <section class="section" data-background-image="treetops.800.jpg">
-        <h2>BUILD</h2>
+        <h2>LEARN</h2>
     </section>
 
 
@@ -40,65 +40,10 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### TemplateView
-* HTML in templates/*.html
-* Views in views.py
-* URL Routes in urls.py
-
-
-#
-                </textarea>
-
-            </section>
-        
-            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
-
-                <textarea data-template>### templates/home.html
-
-    <h1>Home Page</h1>
-    <a href="about.html">About</a>
-    <a href="profile.html">Profile</a>
-  
-#
-                </textarea>
-
-            </section>
-        
-            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
-
-                <textarea data-template>### templates/profile.html
-
-    <h1>Profile Page</h1>
-    <a href="about.html">About</a>
-    <a href="home.html">Home</a>
-
-  
-#
-                </textarea>
-
-            </section>
-        
-            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
-
-                <textarea data-template>### templates/about.html
-
-    <h1>About Us Page</h1>
-    <a href="profile.html">Profile</a>
-    <a href="home.html">Home</a>
-
-
-#
-                </textarea>
-
-            </section>
-        
-            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
-
-                <textarea data-template>### templates/missing.html
-
-    <h1>Missing Page</h1>
-    <h2>404 - Page Not Found</h2>
-    <p>We are sorry, but 404 is for Losers!</p>
+                <textarea data-template>### Course Review
+* Week 1 - Setup Development Tools
+* Week 2 - Build a Django Project
+* Week 3 - Web App Hosting
 
 
 
@@ -108,43 +53,43 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Use one Route to Load Different Page Templates
+                <textarea data-template>### Week 1 - Setup Development Tools
+* Skill 1 - Setup Django
+* Skill 2 - Create a Django Project
+* Skill 3 - Serve Static Media
+* Project 1 - Install Python3, Virtual Env, Django
+* Django for Beginners - Chapter 1
 
-#
+
+
                 </textarea>
 
             </section>
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### pages/views.py
+                <textarea data-template>### Week 2 - Build a Django Project
+* Skill 4 - Display HTML Templates
+* Skill 5 - Pass Data to a Template
+* Skill 6 - Pass Data from URL
+* Project 2 - Build a simple app with TemplateView
+* Django for Beginners - Chapter 2
 
-    from django.views.generic import TemplateView
-    
-    class PageView(TemplateView):
-    
-        def get_template_names(self):
-            template_name = self.kwargs.get('template')
-            return template_name
-        
 
-#
+
                 </textarea>
 
             </section>
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### urls.py
+                <textarea data-template>### Week 3 - Web App Hosting
+* Skill 7 - Setup Python Anywhere
+* Skill 8 - Deploy Application
+* Project 3 - Setup Python Anywhere web hosting
+* Django for Beginners - Chapter 3
 
-    from django.urls import path
-    from page.views import PageView
-    
-    urlpatterns = [
-        path('<str:template>', PageView.as_view()),
-    ]
-    
-    
+
 
                 </textarea>
 

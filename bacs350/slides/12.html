@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>BUILD</title>
+        <title>UNC Course Slides</title>
 
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reset.css">
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reveal.css">
@@ -32,7 +32,7 @@
                 
                     <section>
     <section class="section" data-background-image="treetops.800.jpg">
-        <h2>BUILD</h2>
+        <h2>LEARN</h2>
     </section>
 
 
@@ -40,11 +40,10 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Start "demo12"
-* startproject Demo12
-* startapp hero
-* INSTALLED_APPS = [... 'hero' ...]
-* edit "hero/models.py"
+                <textarea data-template>### Visit the Django website
+* [Django Website](https://www.djangoproject.com/)
+* [Django Start](https://www.djangoproject.com/start)
+* Select the "Object-relational Mapper" expansion link
 
 
 
@@ -54,14 +53,9 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Define Python class
-Superhero (name, identity)
-
-hero/models.py
-
-    class Superhero(models.Model):
-        name = models.CharField(max_length=20)
-        identity = models.CharField(max_length=20)
+                <textarea data-template>### Applications = Data + Views
+* Static Websites are views without data
+* Data is saved state on the server
 
 
 
@@ -71,33 +65,9 @@ hero/models.py
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Data Migrations
-Create the scripts to update the database
-
-Apply the migrations
-
-    python manage.py makemigrations hero
-    
-    python manage.py migrate
-    
-    
-
-                </textarea>
-
-            </section>
-        
-            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
-
-                <textarea data-template>### Enable the Admin UI
-Setup Django Admin
-
-hero/admin.py
-
-    from django.contrib import admin
-
-    from .models import Superhero
-
-    admin.site.register(Superhero)
+                <textarea data-template>### Database
+* Rows and Columns
+* Items and Attributes
 
 
 
@@ -107,28 +77,12 @@ hero/admin.py
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Admin Routes
-URL Routes to Admin pages
+                <textarea data-template>### Table Display
+Superheroes
 
-hero/urls.py
-
-    from django.contrib.admin import site
-
-    urlpatterns = [
-        path(r'admin/', site.urls),
-    ]
-    
-    
-
-                </textarea>
-
-            </section>
-        
-            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
-
-                <textarea data-template>### Create Objects
-* Browse to Admin  "http://127.0.0.1:8000/admin/"
-
+    ID  Hero    Identity  Image
+    1   hulk    Banner    hulk.jpg
+    2   ironman Stark     iron_man.jpg
 
 
                 </textarea>
@@ -137,11 +91,28 @@ hero/urls.py
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Add Heroes
-* Use the Admin views to 
-    * Add records
-    * Modify records
-    * Delete records
+                <textarea data-template>### Table Display
+Addresses
+
+    ID    Appt  Street  City
+    402   1600  Pen.    Wash.
+    666   40    Baker   LA
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Table Display
+Relational Database
+
+Superheroes with Addresses
+
+    ID  Hero    Identity  Address
+    1   hulk    Banner    402
+    2   ironman Stark     666
 
 
 
@@ -151,7 +122,95 @@ hero/urls.py
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Add five Superheroes
+                <textarea data-template>### Two Views of Data
+* Objects in Memory
+* Database Rows
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### ORM - Object Relational Mapper
+* Create Python Classes
+* Automatically create Database Tables
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Superhero
+* Superhero
+    * Name
+    * Identity
+    * Image
+    * Address
+    * Power
+    * Weakness
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Data Migration
+* Examine Python Data Models
+* Create scripts to migrate the database tables
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### CRUD
+* Create
+* Read
+* Update
+* Delete
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Operations on Every Model
+* Create Superhero
+* Read Superhero
+* Update Superhero
+* Delete Superhero
+* Create Address
+* Read Address
+* Update Address
+* Delete Address
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Django Admin View
+* Build a UI to manipulate data
+* Free and easy
+* Create new table in five minutes
 
 
                 </textarea>

@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>BUILD</title>
+        <title>UNC Course Slides</title>
 
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reset.css">
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reveal.css">
@@ -32,7 +32,7 @@
                 
                     <section>
     <section class="section" data-background-image="treetops.800.jpg">
-        <h2>BUILD</h2>
+        <h2>LEARN</h2>
     </section>
 
 
@@ -40,11 +40,72 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Setup workflow
-* new terminal window
-* activate virtual environment
-* edit window
-* browser
+                <textarea data-template>### Slower pace
+* Lots of new material
+* Moving too fast for many
+* We will slow down (Project 1 and Project 2 on Friday)
+* Use this week to catch up
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Priorities - 5 Skills to Master
+* Get the tools setup - Python, Venv, Django
+* Create a Github repo
+* Build an app from scratch
+* Test your app with the dev server
+* Set up the static server
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Command line
+* Windows powershell
+* Mac linux
+* [Command Line](../docs/CommandLine)
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Tools
+* Python 3
+    * python3 --version
+* Virtual Environment
+    * python3 -m venv .venv
+    * source .venv/bin/activate  # On mac
+    * .venv/Scripts/activate.bat # On windows
+    * deactivate
+* Django
+    * pip freeze
+    * pip install django
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Activate the Virtual Environment
+* source .venv/bin/activate  # On mac
+* .venv/Scripts/activate.bat # On windows
+* pip freeze # should see Django
 
 
 
@@ -80,12 +141,9 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Create a template
-
-templates/about.html
-
-    <h1>My Name is Inigo Montoya</h1>
-    <p>Prepare to die</p>
+                <textarea data-template>### templates
+* define HTML for pages
+* template loader to lookup templates
 
 
 
@@ -95,17 +153,24 @@ templates/about.html
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Create a route
+                <textarea data-template>### views.py
+* logic to convert a request into a response
+* written in Python
+* calls hidden logic that does a lot of work
 
-urls.py
 
-    from django.urls import path
-    from django.views.generic import TemplateView
-    
-    urlpatterns = [
-        path('about', TemplateView.as_view(template_name="about.html")),
-        path('home', TemplateView.as_view(template_name="home.html")),
-    ]
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### urls.py
+* listens for specific requests
+* define URL routes to pages
+* maps the request onto a view
+
 
 
                 </textarea>

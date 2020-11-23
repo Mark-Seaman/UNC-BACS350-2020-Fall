@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>BUILD</title>
+        <title>UNC Course Slides</title>
 
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reset.css">
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reveal.css">
@@ -32,7 +32,7 @@
                 
                     <section>
     <section class="section" data-background-image="treetops.800.jpg">
-        <h2>BUILD</h2>
+        <h2>LEARN</h2>
     </section>
 
 
@@ -40,10 +40,26 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Development Demo
+                <textarea data-template>### Project 6 - Superhero Database
+* Deadline Extended to Oct 9
+* Additional requirements added
+* You must push for closure
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Complete Your Projects
+* Project 1 - Setup development tools
+* Project 2 - Build a simple app
+* Project 3 - Application Hosting
 * Project 4 - TemplateView
 * Project 5 - Data Models
-* Demo 17
+* Project 6 - Data Model Views
 
 
 
@@ -53,13 +69,10 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### To Do List
-* Create an app
-* Enable templates
-* Build template
-* Build view
-* Add data to view
-* Build model
+                <textarea data-template>### Working the Project in Class
+* Live demo of solving the problems
+* You must apply this knowledge
+* You must invest 9 hours weekly
 
 
 
@@ -69,10 +82,64 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Use This Demo
-* Study this code
-* Work the demo for yourself
-* Complete Project 5
+                <textarea data-template>### Add Data to Django Views
+    
+templates/page.html
+
+    <h1>{{ title }}</h1>
+    <p>
+        {{ body}}
+    </p>
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Data as dictionary
+
+Define what goes in the variable slots
+
+    {
+        'title': 'My Home Page', 
+        'body': 'This page is boring ...',
+    }
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Setting View Context
+    
+pages/views.py
+    
+     class HomeView(TemplateView):
+        template_name = "page.html"
+        
+        def get_context_data(self, **kwargs):
+            return {
+                'title': 'My Home Page', 
+                'body': 'This page is boring ...',
+            }
+            
+            
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Changes to the Database
+* Databases can be modified
+* Old data must be migrated to the new structure 
 
 
                 </textarea>

@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>BUILD</title>
+        <title>UNC Course Slides</title>
 
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reset.css">
         <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reveal.css">
@@ -32,7 +32,7 @@
                 
                     <section>
     <section class="section" data-background-image="treetops.800.jpg">
-        <h2>BUILD</h2>
+        <h2>LEARN</h2>
     </section>
 
 
@@ -40,11 +40,10 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Project 4 - Superhero News
-* Build a web app at Python Anywhere
-* Index gives a list of heroes
-* Links display details of each hero
-* Each page has a photo
+                <textarea data-template>### View Inheritance
+* Define a base template 
+* Add "{% block content %}"
+* Extend base template for other pages
 
 
 
@@ -54,12 +53,20 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Skills
-* Define and load HTML templates
-* Pass data to a view
-* Pass arguments from URL
-* View inheritance
-* Use of CSS
+                <textarea data-template>### templates/base.html
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>BACS 350 Page</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>        
+        <body>
+            {% block content %}
+            {% endblock content %}
+        </body>
+    </html>
 
 
 
@@ -69,29 +76,14 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Superhero Views
-* startproject Superhero
-* startapp hero
-* setttings
-    * templates (templates)
-    * static server (static)
-    * installed apps (hero)
-    * root URLs (hero.urls)
-    * migrate database models
+                <textarea data-template>### templates/about.html
+
+    {% extends 'base.html' %}
     
-
-
-                </textarea>
-
-            </section>
-        
-            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
-
-                <textarea data-template>### Add Views
-* Index view template (index.html)
-* Hero view template (hero.html)
-* Views (Index View, Hero View)
-* URL routes ('', 'hero/<str:hero>')
+    {% block content %}
+        <h2>About Us</h2>
+        <p>This is all about us!</p>
+    {% endblock content %}
 
 
 
@@ -101,16 +93,22 @@
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Test Index View
-Use Django Tests to get index view
+                <textarea data-template>### Block Nesting - base.html
 
-    from django.test import SimpleTestCase
+```
+{% block content %}
 
-    class ViewTests(SimpleTestCase):
+    {% block header %}
+    {% endblock header %}
 
-        def test_index_view(self):
-            response = self.client.get('/')
-            self.assertEqual(response.status_code, 200)
+    {% block main %}
+    {% endblock main %}
+
+    {% block footer %}
+    {% endblock footer %}
+
+{% endblock content %}
+```
 
 
 
@@ -120,18 +118,36 @@ Use Django Tests to get index view
         
             <section data-background-image="paper.png" data-markdown data-separator="\n### ">
 
-                <textarea data-template>### Test Hero Views
-Use Django Tests to get index view
+                <textarea data-template>### Block Nesting - page.html
 
-    from django.test import SimpleTestCase
+```
+    {% extends 'base.html' %}
 
-    class ViewTests(SimpleTestCase):
+    {% block main %}
+    {% endblock main %}
+```
 
-        def test_hero_view(self):
-            response = self.client.get('hero/hulk')
-            self.assertEqual(response.status_code, 200)
-            response = self.client.get('hero/widow')
-            self.assertEqual(response.status_code, 200)
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Includes
+* Include another HTML file in a template
+* Makes templates easy to read
+* Partial templates should start with "_" 
+
+```
+    {% include '_head.html' %}
+    {% include '_main_menu.html' %}
+    {% include '_side_menu.html' %}
+    {% include '_main.html' %}
+    {% include '_footer.html' %}
+```
 
 
                 </textarea>
