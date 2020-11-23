@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>BUILD</title>
+
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reset.css">
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reveal.css">
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/theme/beige.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+        <link rel="stylesheet" href="slides.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+            <div class="slides">
+
+                <section class="section"
+                         data-background-image="autumn-leaves.jpg">
+                    <h1>bacs200 - Lesson 08</h1>
+                    <h3 class="title">Mark Seaman</h3>
+                    <h3 class="title">University of Northern Colorado</h3>
+                    <p><img class="logo" src="Bear.png" alt="Bear.png"></p>
+                </section>
+
+                
+                    <section>
+    <section class="section" data-background-image="peaking.800.jpg">
+        <h2>BUILD</h2>
+    </section>
+
+
+    
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Python Dictionary
+
+    states = {'colorado': 'Population 6,000,000',
+              'wyoming': 'Population 600,000'}
+    states['colorado']
+    states['wyoming']
+    states['arizona']  **Throws an error**
+
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Safe Access to Dictionary
+     
+    states = {'colorado': 'Population 6,000,000',
+              'wyoming': 'Population 600,000'}
+              
+    states.get('colorado')
+        Population 6,000,000
+        
+    states.get('wyoming')
+        Population 600,000
+        
+    states.get('arizona')
+        None
+
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>###  Passing Keywords in Python
+
+    def population(states, state):
+        return states.get(state)
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>###  Passing the Hero
+
+urls.py
+
+    from django.urls import path
+    from django.views.generic import HulkView, WidowView
+    
+    urlpatterns = [
+        path('hero/<str:identity>', HeroView.as_view()),
+    ]
+
+pages/views.py
+
+    class HeroView(TemplateView):
+        template_name = "hero.html"
+        
+        def get_context_data(self, **kwargs):
+            id = kwargs.get('identity')
+            return {'hero': id}
+            
+            
+Test the pages
+
+    Works
+    
+        http://127.0.0.1:8000/hero/hulk
+        
+        http://127.0.0.1:8000/hero/black_widow
+        
+    Doesn't Work
+        
+        http://127.0.0.1:8000/hero/iron_man
+        
+        http://127.0.0.1:8000/hero
+        
+        http://127.0.0.1:8000
+        
+
+                </textarea>
+
+            </section>
+        
+
+    
+
+
+</section>
+<section>
+    <section class="section" data-background-image="peaking.800.jpg">
+        <h2>BUILD</h2>
+    </section>
+
+
+    
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Python Dictionary
+
+    states = {'colorado': 'Population 6,000,000',
+              'wyoming': 'Population 600,000'}
+    states['colorado']
+    states['wyoming']
+    states['arizona']  **Throws an error**
+
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Safe Access to Dictionary
+     
+    states = {'colorado': 'Population 6,000,000',
+              'wyoming': 'Population 600,000'}
+              
+    states.get('colorado')
+        Population 6,000,000
+        
+    states.get('wyoming')
+        Population 600,000
+        
+    states.get('arizona')
+        None
+
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>###  Passing Keywords in Python
+
+    def population(states, state):
+        return states.get(state)
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>###  Passing the Hero
+
+urls.py
+
+    from django.urls import path
+    from django.views.generic import HulkView, WidowView
+    
+    urlpatterns = [
+        path('hero/<str:identity>', HeroView.as_view()),
+    ]
+
+pages/views.py
+
+    class HeroView(TemplateView):
+        template_name = "hero.html"
+        
+        def get_context_data(self, **kwargs):
+            id = kwargs.get('identity')
+            return {'hero': id}
+            
+            
+Test the pages
+
+    Works
+    
+        http://127.0.0.1:8000/hero/hulk
+        
+        http://127.0.0.1:8000/hero/black_widow
+        
+    Doesn't Work
+        
+        http://127.0.0.1:8000/hero/iron_man
+        
+        http://127.0.0.1:8000/hero
+        
+        http://127.0.0.1:8000
+        
+
+                </textarea>
+
+            </section>
+        
+
+    
+
+
+</section>
+                
+
+            </div>
+        </div>
+
+        <script src="http://shrinking-world.com/static/revealjs/dist/reveal.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/notes/notes.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/markdown/markdown.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+            });
+
+        </script>
+    </body>
+
+</html>

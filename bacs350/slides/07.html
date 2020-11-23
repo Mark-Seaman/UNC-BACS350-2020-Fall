@@ -1,0 +1,466 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>BUILD</title>
+
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reset.css">
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reveal.css">
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/theme/beige.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+        <link rel="stylesheet" href="slides.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+            <div class="slides">
+
+                <section class="section"
+                         data-background-image="autumn-leaves.jpg">
+                    <h1>bacs200 - Lesson 07</h1>
+                    <h3 class="title">Mark Seaman</h3>
+                    <h3 class="title">University of Northern Colorado</h3>
+                    <p><img class="logo" src="Bear.png" alt="Bear.png"></p>
+                </section>
+
+                
+                    <section>
+    <section class="section" data-background-image="peaking.800.jpg">
+        <h2>BUILD</h2>
+    </section>
+
+
+    
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Create a Web App
+* Steps to deploy your app
+    * Create a virtual environment at Python Anywhere
+    * Install Django
+    * Git Clone
+    * Create Web App
+    * Debug and Test
+   
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Learn Linux Commands
+* Master a few command line basics
+* Read [Command Line](CommandLine)
+* Essential Linux commands: pwd, cd, ls
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Run Terminal Window
+*  Select "Consoles, New console, Bash"
+    * pwd
+    * cd
+    * ls -al
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Clone your git repository
+* Visit your [Github Repo](https://github.com/Mark-Seaman/UNC-BACS-350.git)
+* Clone your repo  (this is mine)
+    
+    git clone https://github.com/Mark-Seaman/UNC-BACS-350.git
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Create Virtual Environment
+* Create an isolated python environment
+    * mkvirtualenv --python=/usr/bin/python3.8 .venv
+* Activate the environment
+    * source .venv/bin/activate
+* Install Django in the environment
+    * pip install django
+
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Create Web App
+* Visit your main page
+* Login to [Python Anywhere account](https://www.pythonanywhere.com)
+* Bookmark this page on your bookmark toolbar
+* Select Web tab in top menu
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Configure Your Web App
+* Your Python Anywhere account supports one free Web App
+* Free accounts must be enabled every three months
+* Click on "Run until 3 months from today" button
+* This is not a problem for when you are actively developing code
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Configure Web App
+* Find your source code
+* Modify your code for Python Anywhere
+    * Create WSGI connection
+    * Allow host at "markseaman.pythonanywhere.com"
+* Setup static server
+* Run the server
+* Load the page
+* Debug 
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Python Anywhere Server
+
+<img src="../lesson/img" alt="">
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Configure Code Settings
+* Edit WSGI Python File
+
+<img src="../lesson/img" alt="">
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Python Anywhere Static Files
+
+<img src="../lesson/img" alt="">
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Python Anywhere Database
+* Start with MySQL, switch to PostGres if needed
+
+<img src="../lesson/img" alt="">
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Startup the Server
+* Reload http://markseaman.pythonanywhere.com/
+* Browse to http://markseaman.pythonanywhere.com/
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Read the Log
+* [Error Log](https://www.pythonanywhere.com/user/markseaman/files/var/log/markseaman.pythonanywhere.com.error.log)
+
+
+                </textarea>
+
+            </section>
+        
+
+    
+
+
+</section>
+<section>
+    <section class="section" data-background-image="peaking.800.jpg">
+        <h2>BUILD</h2>
+    </section>
+
+
+    
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Create a Web App
+* Steps to deploy your app
+    * Create a virtual environment at Python Anywhere
+    * Install Django
+    * Git Clone
+    * Create Web App
+    * Debug and Test
+   
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Learn Linux Commands
+* Master a few command line basics
+* Read [Command Line](CommandLine)
+* Essential Linux commands: pwd, cd, ls
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Run Terminal Window
+*  Select "Consoles, New console, Bash"
+    * pwd
+    * cd
+    * ls -al
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Clone your git repository
+* Visit your [Github Repo](https://github.com/Mark-Seaman/UNC-BACS-350.git)
+* Clone your repo  (this is mine)
+    
+    git clone https://github.com/Mark-Seaman/UNC-BACS-350.git
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Create Virtual Environment
+* Create an isolated python environment
+    * mkvirtualenv --python=/usr/bin/python3.8 .venv
+* Activate the environment
+    * source .venv/bin/activate
+* Install Django in the environment
+    * pip install django
+
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Create Web App
+* Visit your main page
+* Login to [Python Anywhere account](https://www.pythonanywhere.com)
+* Bookmark this page on your bookmark toolbar
+* Select Web tab in top menu
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Configure Your Web App
+* Your Python Anywhere account supports one free Web App
+* Free accounts must be enabled every three months
+* Click on "Run until 3 months from today" button
+* This is not a problem for when you are actively developing code
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Configure Web App
+* Find your source code
+* Modify your code for Python Anywhere
+    * Create WSGI connection
+    * Allow host at "markseaman.pythonanywhere.com"
+* Setup static server
+* Run the server
+* Load the page
+* Debug 
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Python Anywhere Server
+
+<img src="../lesson/img" alt="">
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Configure Code Settings
+* Edit WSGI Python File
+
+<img src="../lesson/img" alt="">
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Python Anywhere Static Files
+
+<img src="../lesson/img" alt="">
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Python Anywhere Database
+* Start with MySQL, switch to PostGres if needed
+
+<img src="../lesson/img" alt="">
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Startup the Server
+* Reload http://markseaman.pythonanywhere.com/
+* Browse to http://markseaman.pythonanywhere.com/
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Read the Log
+* [Error Log](https://www.pythonanywhere.com/user/markseaman/files/var/log/markseaman.pythonanywhere.com.error.log)
+
+
+                </textarea>
+
+            </section>
+        
+
+    
+
+
+</section>
+                
+
+            </div>
+        </div>
+
+        <script src="http://shrinking-world.com/static/revealjs/dist/reveal.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/notes/notes.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/markdown/markdown.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+            });
+
+        </script>
+    </body>
+
+</html>
