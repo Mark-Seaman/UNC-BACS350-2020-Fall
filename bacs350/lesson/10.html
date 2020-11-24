@@ -107,7 +107,49 @@
     <main>
         <div class="container">
             
-                <h1>Missing Document</h1><p>We are sorry, but the document you were looking for could not be found.</p>
+                <h1 id="lesson-10---view-inheritance">Lesson 10 - View Inheritance</h1>
+<h2 id="learn">LEARN</h2>
+<h3 id="templatesbase.html">templates/base.html</h3>
+<p>Define a template that can be loaded like any other. Notice the &quot;{% block content %}&quot;.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;title&gt;BACS 350 Page&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;h1&gt;BACS 350 Page&lt;/h1&gt;
+        {% block content %}
+            &lt;h2&gt;No Block Defined&lt;/h2&gt;
+        {% endblock content %}
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="templatesabout.html">templates/about.html</h3>
+<p>The template can be extended to replace the &quot;{% block content %}&quot;.</p>
+<pre><code>{% extends &#39;base.html&#39; %}
+
+{% block content %}
+    &lt;h2&gt;About Us&lt;/h2&gt;
+    &lt;p&gt;This is all about us!&lt;/p&gt;
+{% endblock content %}</code></pre>
+<h3 id="templatesprofile.html">templates/profile.html</h3>
+<p>The template can be extended to replace the &quot;{% block content %}&quot;.</p>
+<pre><code>{% extends &#39;base.html&#39; %}
+
+{% block content %}
+    &lt;h2&gt;Profile Page&lt;/h2&gt;
+    &lt;p&gt;This is my profile&lt;/p&gt;
+{% endblock content %}</code></pre>
+<h3 id="templatespage_theme.html">templates/page_theme.html</h3>
+<ul>
+<li>View a more realistic example with several components</li>
+<li>The theme load both CSS and JavaScript</li>
+<li>A header, footer, and main are defined</li>
+<li><a href="https://github.com/Mark-Seaman/UNC-BACS-350/blob/master/demo/week04/demo10/templates/page_theme.html">Page Theme</a></li>
+</ul>
+
             
         </div>
     </main>

@@ -107,7 +107,101 @@
     <main>
         <div class="container">
             
-                <h1>Missing Document</h1><p>We are sorry, but the document you were looking for could not be found.</p>
+                <h1 id="lesson-8---urls-with-parameters">Lesson 8 - URLs with Parameters</h1>
+<h2 id="learn">LEARN</h2>
+<h3 id="templateview">TemplateView</h3>
+<ul>
+<li>HTML in templates/hulk.html</li>
+<li>Views in views.py</li>
+<li>URL Routes in urls.py</li>
+<li>Static Server for images</li>
+</ul>
+<h3 id="templateshulk.html">templates/hulk.html</h3>
+<pre><code>&lt;h1&gt;Hulk Profile&lt;/h1&gt;
+&lt;img src=&quot;hulk.jpg&quot; alt=&quot;Hulk&quot;&gt;</code></pre>
+<h3 id="urls.py">urls.py</h3>
+<pre><code>from django.urls import path
+from django.views.generic import HulkView, WidowView
+
+urlpatterns = [
+    path(&#39;hulk&#39;, HulkView.as_view()),
+    path(&#39;black_widow&#39;, WidowView.as_view()),
+]</code></pre>
+<h3 id="pagesviews.py">pages/views.py</h3>
+<pre><code>from django.views.generic import TemplateView
+
+class HulkView(TemplateView):
+    template_name = &#39;hulk.html&#39;
+
+class WidowView(TemplateView):
+    template_name = &quot;black_widow.html&quot;
+    </code></pre>
+<h3 id="pages-may-contain-images">Pages may Contain Images</h3>
+<ul>
+<li>Django serves pages expected to be processed</li>
+<li>Static content is passed directly through without processing</li>
+<li>Django contains a static server that can be enabled</li>
+</ul>
+<h3 id="settings.py">settings.py</h3>
+<ul>
+<li>STATIC_URL = '/static/'</li>
+<li>STATICFILES_DIRS = ['static']</li>
+</ul>
+<h2 id="build">BUILD</h2>
+<h3 id="python-dictionary">Python Dictionary</h3>
+<pre><code>states = {&#39;colorado&#39;: &#39;Population 6,000,000&#39;,
+          &#39;wyoming&#39;: &#39;Population 600,000&#39;}
+states[&#39;colorado&#39;]
+states[&#39;wyoming&#39;]
+states[&#39;arizona&#39;]  **Throws an error**</code></pre>
+<h3 id="safe-access-to-dictionary">Safe Access to Dictionary</h3>
+<pre><code>states = {&#39;colorado&#39;: &#39;Population 6,000,000&#39;,
+          &#39;wyoming&#39;: &#39;Population 600,000&#39;}
+          
+states.get(&#39;colorado&#39;)
+    Population 6,000,000
+    
+states.get(&#39;wyoming&#39;)
+    Population 600,000
+    
+states.get(&#39;arizona&#39;)
+    None</code></pre>
+<h3 id="passing-keywords-in-python">Passing Keywords in Python</h3>
+<pre><code>def population(states, state):
+    return states.get(state)</code></pre>
+<h3 id="passing-the-hero">Passing the Hero</h3>
+<p>urls.py</p>
+<pre><code>from django.urls import path
+from django.views.generic import HulkView, WidowView
+
+urlpatterns = [
+    path(&#39;hero/&lt;str:identity&gt;&#39;, HeroView.as_view()),
+]</code></pre>
+<p>pages/views.py</p>
+<pre><code>class HeroView(TemplateView):
+    template_name = &quot;hero.html&quot;
+    
+    def get_context_data(self, **kwargs):
+        id = kwargs.get(&#39;identity&#39;)
+        return {&#39;hero&#39;: id}
+        
+        </code></pre>
+<p>Test the pages</p>
+<pre><code>Works
+
+    http://127.0.0.1:8000/hero/hulk
+    
+    http://127.0.0.1:8000/hero/black_widow
+    
+Doesn&#39;t Work
+    
+    http://127.0.0.1:8000/hero/iron_man
+    
+    http://127.0.0.1:8000/hero
+    
+    http://127.0.0.1:8000
+    </code></pre>
+
             
         </div>
     </main>

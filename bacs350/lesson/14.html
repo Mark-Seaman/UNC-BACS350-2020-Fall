@@ -107,7 +107,138 @@
     <main>
         <div class="container">
             
-                <h1>Missing Document</h1><p>We are sorry, but the document you were looking for could not be found.</p>
+                <h1 id="lesson-14---manipulating-data">Lesson 14 - Manipulating Data</h1>
+<h2 id="learn">LEARN</h2>
+<h3 id="projects">Projects</h3>
+<ul>
+<li>I will grade project weekly and update the gradebook</li>
+<li>You know which projects you have completed</li>
+</ul>
+<h3 id="book">Book</h3>
+<ul>
+<li>1 - Setup tools</li>
+<li>2 - Create an app</li>
+<li>3 - App hosting</li>
+<li>4 - Database &amp; Admin view</li>
+<li>5 - Tests</li>
+<li>6 - Forms</li>
+</ul>
+<h3 id="added-book-code">Added Book Code</h3>
+<ul>
+<li><a href="https://github.com/Mark-Seaman/UNC-BACS-350/tree/master/demo/week05/ch6-blog-app-with-forms">Blog App Demo</a></li>
+</ul>
+<h3 id="data-models">Data Models</h3>
+<ul>
+<li>ORM lets us write Data Models as Python Classes</li>
+<li>Database is automatically updated</li>
+<li>Migration updates the tables</li>
+</ul>
+<h3 id="data-migrations">Data Migrations</h3>
+<p>Create the scripts to update the database</p>
+<p>Apply the migrations</p>
+<pre><code>python manage.py makemigrations hero
+
+python manage.py migrate</code></pre>
+<h3 id="crud">CRUD</h3>
+<ul>
+<li>CREATE - make a new record</li>
+<li>READ - get one or more records</li>
+<li>UPDATE - modify an existing record</li>
+<li>DELETE - remove a record</li>
+</ul>
+<h3 id="django-shell">Django Shell</h3>
+<p>A console window will let you execute Python code directly</p>
+<p>Do all the CRUD operations</p>
+<pre><code>python manage.py shell
+ </code></pre>
+<h3 id="data-model">Data Model</h3>
+<ul>
+<li>Superhero (name, identity)</li>
+</ul>
+<p>hero/models.py</p>
+<pre><code>class Superhero(models.Model):
+    name = models.CharField(max_length=20)
+    identity = models.CharField(max_length=20)</code></pre>
+<h3 id="create">CREATE</h3>
+<p>hero/hero.py</p>
+<pre><code>from .models import Superhero
+
+def add_hero(hero_name, hero_id):
+    return Superhero.objects.create(name=hero_name, identity=hero_id)</code></pre>
+<h3 id="read---list">READ - List</h3>
+<p>hero/hero.py</p>
+<pre><code>def list_heroes():
+    return Superhero.objects.all()</code></pre>
+<h3 id="read---get">READ - Get</h3>
+<p>hero/hero.py</p>
+<pre><code>def get_hero(pk):
+    return Superhero.objects.get(pk=pk)
+
+def get_identity(id):
+    return Superhero.objects.get(identity=id)
+
+def get_hero_name(supername):
+    return Superhero.objects.get(name=supername)</code></pre>
+<h3 id="update">UPDATE</h3>
+<p>hero/hero.py</p>
+<pre><code>def set_hero_id(pk, id):
+    w = get_hero(pk)
+    w.identity=id
+    w.save()
+    
+def set_hero_name(pk, name):
+    w = get_hero(pk)
+    w.name=name
+    w.save()</code></pre>
+<h3 id="delete">DELETE</h3>
+<p>hero/hero.py</p>
+<pre><code>def delete_hero(pk):
+    Superhero.objects.get(pk=pk).delete()    </code></pre>
+<h2 id="build">BUILD</h2>
+<h3 id="test-crud">Test CRUD</h3>
+<p>Use Django Tests to test the CRUD operations</p>
+<p>hero/tests.py</p>
+<pre><code>from django.test import TestCase
+
+from .models import Superhero
+from .hero import list_heroes
+
+class CrudTests(TestCase):
+
+    def test_num_heroes(self):
+        num_heroes = len(list_heroes())
+        self.assertEqual(num_heroes, 0)</code></pre>
+<h3 id="test-each-operation">Test Each Operation</h3>
+<p>Test every function you write</p>
+<pre><code>def test_hero_model(self):
+    pass
+    
+def test_create(self):
+    pass
+    
+def test_read(self):
+    pass
+    
+def test_update(self):
+    pass
+    
+def test_delete(self):
+    pass
+    </code></pre>
+<h3 id="use-the-query-functions">Use the Query Functions</h3>
+<ul>
+<li>Tests the functions</li>
+<li>Provides place to put business logic</li>
+<li>Enable tests in small steps</li>
+</ul>
+<h3 id="you-practice">You practice</h3>
+<ul>
+<li>Create access functions in hero/hero.py</li>
+<li>Build tests in hero/tests.py</li>
+<li>Debug tests and functions one at a time</li>
+<li>Create five tests (model, create, read, update, delete)</li>
+</ul>
+
             
         </div>
     </main>
