@@ -107,7 +107,106 @@
     <main>
         <div class="container">
             
-                <h1>Missing Document</h1><p>We are sorry, but the document you were looking for could not be found.</p>
+                <h1 id="project-11---accordion-tabs">Project 11 - Accordion &amp; Tabs</h1>
+<h2 id="goals">Goals</h2>
+<ul>
+<li>Extend Data Views with Components</li>
+<li>Build an applications that uses generic Django views for the CRUD operations</li>
+<li>Use View Tricks
+<ul>
+<li>View Inheritance
+<ul>
+<li>templates/superhero_theme.html</li>
+</ul></li>
+<li>Partial Templates
+<ul>
+<li>include &quot;_navbar.html&quot;</li>
+<li>include &quot;_user.html&quot;</li>
+<li>include &quot;_header.html&quot;</li>
+<li>include &quot;_footer.html&quot;</li>
+<li>include &quot;_card.html&quot;</li>
+<li>include &quot;_cards.html&quot;</li>
+<li>include &quot;_doc.html&quot;</li>
+<li>include &quot;_tabs.html&quot;</li>
+<li>include &quot;_accordion.html&quot;</li>
+</ul></li>
+</ul></li>
+<li>Django View Design Patterns
+<ul>
+<li>CardView</li>
+<li>TableView</li>
+<li>DocumentView</li>
+<li>AccordionView</li>
+<li>TabsView</li>
+<li>Navbar - main menu</li>
+</ul></li>
+<li>User Management
+<ul>
+<li>Users can Register</li>
+<li>Users login/logout</li>
+<li>Edit operations require login</li>
+</ul></li>
+</ul>
+<h3 id="steps">Steps</h3>
+<p>Create a Superhero News website. Implement the these pages.</p>
+<p><strong>Home</strong> - Landing page with information about the website</p>
+<ul>
+<li>Contains Superhero page theme with Header, Navbar, Main, Footer</li>
+<li>Display info in a Bootstrap Card and Container</li>
+<li>Navbar shows brand, menu items (List, Add), user info</li>
+</ul>
+<p><strong>List</strong> - Show list of heros as an Accordion view</p>
+<ul>
+<li>Each hero entry shows name and small photo</li>
+<li>Each panel shows hero details: Name, Small photo, Link to Detail page</li>
+</ul>
+<p><strong>Detail</strong> - Detail page show read-only details</p>
+<ul>
+<li>Superhero Record
+<ul>
+<li>name</li>
+<li>identity</li>
+<li>description</li>
+<li>strength</li>
+<li>weakness</li>
+<li>image</li>
+</ul></li>
+</ul>
+<p><strong>Add</strong> - Add page allows logged in users to add a new hero</p>
+<ul>
+<li>Superhero Record
+<ul>
+<li>name</li>
+<li>identity</li>
+<li>description</li>
+<li>strength</li>
+<li>weakness</li>
+<li>image</li>
+</ul></li>
+<li>Images are added on the back-end or by setting an external URL</li>
+<li>Redirect to the list detail after add</li>
+</ul>
+<p><strong>Edit</strong> - Edit page allows logged in users to edit an existing hero</p>
+<ul>
+<li>Superhero Record
+<ul>
+<li>name</li>
+<li>identity</li>
+<li>description</li>
+<li>strength</li>
+<li>weakness</li>
+<li>image</li>
+</ul></li>
+<li>Redirect to the detail view after edit</li>
+</ul>
+<p><strong>Delete</strong> - Delete page allows logged in users to delete a hero</p>
+<ul>
+<li>Confirm the deletion</li>
+<li>Redirect to the list view after delete</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<p>Details provided later</p>
+
             
         </div>
     </main>
