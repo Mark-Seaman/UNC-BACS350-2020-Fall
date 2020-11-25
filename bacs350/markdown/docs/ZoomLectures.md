@@ -1,845 +1,288 @@
-<!doctype html>
-<html lang="en">
+# Zoom Lectures
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>static/pages/bacs350/docs/ZoomLectures.html</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-              crossorigin="anonymous">
-        
-    <link rel="stylesheet" href="../unc.css">
+## Zoom Links
 
-    </head>
+![](img/zoom-links.png)
 
-    <body>
 
-        
-            
+## BACS 350 - Lessons
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+### Lesson 1 - Mon, Aug 24,2020
 
-        <div class="container">
+[Mon, Aug 24,2020](https://unco.zoom.us/rec/play/uZclcOyprDM3HYWWuQSDCqAsW43seqKs0CYarKEFzUfkBnEEZwekYrcTYeTeiQFV5Wm-503yLFJQqR7n)
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <a href="https://shrinking-world.com" class="navbar-brand">Shrinking World</a>
-
-                <ul class="navbar-nav ml-auto">
-
-                    
-                        <li class="nav-item ">
-                            <a href="https://markseaman.org" class="nav-link">Mark Seaman</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://seamanslog.com" class="nav-link">Blog</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://shrinking-world.com/course" class="nav-link">Courses</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://shrinking-world.com/book" class="nav-link">Books</a>
-                        </li>
-                    
-
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-    
-        <li
-                
-                    class="nav-item mr-3"
-                
-        >
-            <a class="nav-link" href="/course//register">
-                <i class="fas fa-user-plus"></i> Register</a>
-        </li>
-        <li
-                
-                    class="nav-item mr-3"
-                
-        >
-            <a class="nav-link" href="/course//login">
-                <i class="fas fa-sign-in-alt"></i>
-
-                Login</a>
-        </li>
-    
-</ul>
-
-            </div>
-        </div>
-
-    </nav>
-
-
-
-            
-
-    <header class="p-lg-5">
-        <div class="row media">
-            <div class="media-body">
-                <h1 class="display-4 ml-5">
-                    <a href="../lesson/02.html">UNC BACS 200</a>
-                </h1>
-                <h2 class="display-6 ml-5">Web Dev Intro</h2>
-            </div>
-            <img class="m-3 rounded-circle image-fluid" src="../lesson/img/Bear.png" alt="Logo" width="150">
-        </div>
-    </header>
-
-
-
-            
-
-    <main>
-        <div class="container">
-            
-                <!doctype html>
-<html lang="en">
-<pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot;
-          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;static/pages/bacs350/docs/ZoomLectures.html&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
-          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    
-&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-
-
-
-&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-
-        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
-            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-        &lt;/button&gt;
-
-        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
-            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
-                    &lt;/li&gt;
-                
-
-            &lt;/ul&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
-            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
-
-            Login&lt;/a&gt;
-    &lt;/li&gt;</code></pre>
-</ul>
-<pre><code>        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/nav&gt;
-
-
-
-
-
-&lt;header class=&quot;p-lg-5&quot;&gt;
-    &lt;div class=&quot;row media&quot;&gt;
-        &lt;div class=&quot;media-body&quot;&gt;
-            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
-                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
-            &lt;/h1&gt;
-            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
-        &lt;/div&gt;
-        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
-    &lt;/div&gt;
-&lt;/header&gt;
-
-
-
-
-
-&lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        
-            &lt;!doctype html&gt;</code></pre>
-<html lang="en">
-<pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot;
-          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;static/pages/bacs350/docs/ZoomLectures.html&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
-          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    
-&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-
-
-
-&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-
-        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
-            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-        &lt;/button&gt;
-
-        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
-            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
-                    &lt;/li&gt;
-                
-
-            &lt;/ul&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
-            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
-
-            Login&lt;/a&gt;
-    &lt;/li&gt;</code></pre>
-</ul>
-<pre><code>        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/nav&gt;
-
-
-
-
-
-&lt;header class=&quot;p-lg-5&quot;&gt;
-    &lt;div class=&quot;row media&quot;&gt;
-        &lt;div class=&quot;media-body&quot;&gt;
-            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
-                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
-            &lt;/h1&gt;
-            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
-        &lt;/div&gt;
-        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
-    &lt;/div&gt;
-&lt;/header&gt;
-
-
-
-
-
-&lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        
-            &lt;h1 id=&quot;zoom-lectures&quot;&gt;Zoom Lectures&lt;/h1&gt;</code></pre>
-<h2 id="zoom-links">
-Zoom Links
-</h2>
-<div class="figure">
-<p>
-<img src="../lesson/img/zoom-links.png" />
-</p>
-</div>
-<h2 id="bacs-350---lessons">
-BACS 350 - Lessons
-</h2>
-<h3 id="lesson-1---mon-aug-242020">
-Lesson 1 - Mon, Aug 24,2020
-</h3>
-<p>
-<a href="https://unco.zoom.us/rec/play/uZclcOyprDM3HYWWuQSDCqAsW43seqKs0CYarKEFzUfkBnEEZwekYrcTYeTeiQFV5Wm-503yLFJQqR7n">Mon, Aug 24,2020</a>
-</p>
-<p>
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Aug 24,2020 2:29 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(98 MB)
-</p>
-<h3 id="lesson-2---wed-aug-262020">
-Lesson 2 - Wed, Aug 26,2020
-</h3>
-<p>
+
+
+### Lesson 2 - Wed, Aug 26,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Aug 26,2020 2:29 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(106 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/7JAkIuiuqjI3H9eTswSDBPZ8W460L66sgyUWrvEFmhnjUSIKO1f1Z7RAZeVH--7AT_4B19n3dkr-3Xoq">Wed, Aug 26,2020</a>
-</p>
-<h3 id="lesson-3---fri-aug-282020">
-Lesson 3 - Fri, Aug 28,2020
-</h3>
-<p>
+
+[Wed, Aug 26,2020](https://unco.zoom.us/rec/play/7JAkIuiuqjI3H9eTswSDBPZ8W460L66sgyUWrvEFmhnjUSIKO1f1Z7RAZeVH--7AT_4B19n3dkr-3Xoq)
+
+
+### Lesson 3 - Fri, Aug 28,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Aug 28,2020 2:31 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(81 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/7JB_I-79qD03T4eXsQSDBvJ_W9TvK6qs0XAWrPYJnh60VSNQYQWmM7FEZGuj7LbIa1dHntpaHZvp7Ro">Fri, Aug 28,2020</a>
-</p>
-<h3 id="lesson-4---mon-aug-312020">
-Lesson 4 - Mon, Aug 31,2020
-</h3>
-<p>
+
+[Fri, Aug 28,2020](https://unco.zoom.us/rec/play/7JB_I-79qD03T4eXsQSDBvJ_W9TvK6qs0XAWrPYJnh60VSNQYQWmM7FEZGuj7LbIa1dHntpaHZvp7Ro)
+
+
+### Lesson 4 - Mon, Aug 31,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Aug 31,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(103 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/ucZ7cuv8qjk3TtKd4QSDAvMvW9TuLKKsgCZPq6EMnxq8VXUKO1r1MLQRa7MPt-6YpB8eMVGxqG37V11N">Mon, Aug 31,2020</a>
-</p>
-<h3 id="lesson-5---wed-sep-22020">
-Lesson 5 - Wed, Sep 2,2020
-</h3>
-<p>
+
+[Mon, Aug 31,2020](https://unco.zoom.us/rec/play/ucZ7cuv8qjk3TtKd4QSDAvMvW9TuLKKsgCZPq6EMnxq8VXUKO1r1MLQRa7MPt-6YpB8eMVGxqG37V11N)
+
+
+### Lesson 5 - Wed, Sep 2,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 2,2020 2:32 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(93 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/801-kiGCjttsGEk1HKQq1mp1pXCQjLTwV_S4wq1oqXy1kjI4TJ4fOQBJ9EcHq918AEsxHtdyhaW78dS-.2_wQ0dUjd6oISAWd">Wed, Sep 2,2020</a>
-</p>
-<h3 id="lesson-6---fri-sep-42020">
-Lesson 6 - Fri, Sep 4,2020
-</h3>
-<p>
+
+[Wed, Sep 2,2020](https://unco.zoom.us/rec/play/801-kiGCjttsGEk1HKQq1mp1pXCQjLTwV_S4wq1oqXy1kjI4TJ4fOQBJ9EcHq918AEsxHtdyhaW78dS-.2_wQ0dUjd6oISAWd)
+
+
+### Lesson 6 - Fri, Sep 4,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 4,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(101 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/TokmWGcU4CXfLXF96M9YATm3LglVEeI-sOwOeU9sDU3GKdBTSQvKJzbmwtzQD6lxhSDutES-EfCa8w0t.Dyk9vjfgx55ao6x7">Fri, Sep 4,2020</a>
-</p>
-<h3 id="lesson-7---wed-sep-92020">
-Lesson 7 - Wed, Sep 9,2020
-</h3>
-<p>
+
+[Fri, Sep 4,2020](https://unco.zoom.us/rec/play/TokmWGcU4CXfLXF96M9YATm3LglVEeI-sOwOeU9sDU3GKdBTSQvKJzbmwtzQD6lxhSDutES-EfCa8w0t.Dyk9vjfgx55ao6x7)
+
+
+### Lesson 7 - Wed, Sep 9,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 9,2020 2:29 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(113 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/M5OwlOmm4Vyn_hHpomTL7XpjhEgXGtAHGk4vNdCvpBs0BqNj6jRzyYsNt_hEBDF2aaLCH0b_qBD68ow.c4WCFgoCQkGYW3zP">Wed, Sep 9,2020</a>
-</p>
-<h3 id="lesson-8---fri-sep-112020">
-Lesson 8 - Fri, Sep 11,2020
-</h3>
-<p>
+
+[Wed, Sep 9,2020](https://unco.zoom.us/rec/play/M5OwlOmm4Vyn_hHpomTL7XpjhEgXGtAHGk4vNdCvpBs0BqNj6jRzyYsNt_hEBDF2aaLCH0b_qBD68ow.c4WCFgoCQkGYW3zP)
+
+
+### Lesson 8 - Fri, Sep 11,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 11,2020 2:31 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(79 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/WpFxyeneLQGWWgkzUNVuUchpp8a1qNZfv-CzzNhSjux77dmRF_tVfyGVYauSKUQjab8AQz-O4420JkGy.N1PDlURIhnH3DfpK">Fri, Sep 11,2020</a>
-</p>
-<h3 id="lesson-9---mon-sep-142020">
-Lesson 9 - Mon, Sep 14,2020
-</h3>
-<p>
+
+[Fri, Sep 11,2020](https://unco.zoom.us/rec/play/WpFxyeneLQGWWgkzUNVuUchpp8a1qNZfv-CzzNhSjux77dmRF_tVfyGVYauSKUQjab8AQz-O4420JkGy.N1PDlURIhnH3DfpK)
+
+
+### Lesson 9 - Mon, Sep 14,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 14,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(105 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/x--eeppRkSrFq6lKQZm4diqUrrOOGPpDvOfKoTZxMTckS6wx2SVj1k3x9D89PnbXBPmoE4TQjm3lOWjo.tv5u0vx4tmWzHKLP">Mon, Sep 14,2020</a>
-</p>
-<h3 id="lesson-10---wed-sep-162020">
-Lesson 10 - Wed, Sep 16,2020
-</h3>
-<p>
+
+[Mon, Sep 14,2020](https://unco.zoom.us/rec/play/x--eeppRkSrFq6lKQZm4diqUrrOOGPpDvOfKoTZxMTckS6wx2SVj1k3x9D89PnbXBPmoE4TQjm3lOWjo.tv5u0vx4tmWzHKLP)
+
+
+### Lesson 10 - Wed, Sep 16,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 16,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(67 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/Ka-X8zOEAL_qlzAohEiYCK1Q3cj7w2Iq9XaGkKYQXDU8HwmW6M4ItoyNfwd7HWk52hr89JPlR6S-6G3z.shxS-qEya6dy2QAX">Wed, Sep 16,2020</a>
-</p>
-<h3 id="lesson-11---fri-sep-182020">
-Lesson 11 - Fri, Sep 18,2020
-</h3>
-<p>
+
+[Wed, Sep 16,2020](https://unco.zoom.us/rec/play/Ka-X8zOEAL_qlzAohEiYCK1Q3cj7w2Iq9XaGkKYQXDU8HwmW6M4ItoyNfwd7HWk52hr89JPlR6S-6G3z.shxS-qEya6dy2QAX)
+
+
+### Lesson 11 - Fri, Sep 18,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 18,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(103 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/H7jyIkLvqzlxOVsvT_qL1iCU_27AqXu6U-tfeMWFUcnUU-qZQub1unFUlPlcGbwtdCOwJNcfKio3Wa-b.Q_Pleyx5clJNagaO">Fri, Sep 18,2020</a>
-</p>
-<h3 id="lesson-12---mon-sep-212020">
-Lesson 12 - Mon, Sep 21,2020
-</h3>
-<p>
+
+[Fri, Sep 18,2020](https://unco.zoom.us/rec/play/H7jyIkLvqzlxOVsvT_qL1iCU_27AqXu6U-tfeMWFUcnUU-qZQub1unFUlPlcGbwtdCOwJNcfKio3Wa-b.Q_Pleyx5clJNagaO)
+
+
+### Lesson 12 - Mon, Sep 21,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date: Sep 21,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(72 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/9YxP5QsglBdPrZLAepUyZLru3yw9LTb00a4NHw7hRvDKgwdJzLAnN6jRSpK6ruA9HhXsKiOEIYmTSSu8.37iW8ryvqZyghirT">Mon, Sep 21,2020</a>
-</p>
-<h3 id="lesson-13---wed-sep-232020">
-Lesson 13 - Wed, Sep 23,2020
-</h3>
-<p>
+
+[Mon, Sep 21,2020](https://unco.zoom.us/rec/play/9YxP5QsglBdPrZLAepUyZLru3yw9LTb00a4NHw7hRvDKgwdJzLAnN6jRSpK6ruA9HhXsKiOEIYmTSSu8.37iW8ryvqZyghirT)
+
+
+### Lesson 13 - Wed, Sep 23,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 23,2020 2:31 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(88 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/6tviND4Ic_6CLZgvqO6Dp5BX4hdfxUnn3VEhMkwdshiz0Gj8BYdnWQNn1pJ1H5dj8UAhv9I-87opqP8.7YDI3_Mqs7wcYNf9">Wed, Sep 23,2020</a>
-</p>
-<h3 id="lesson-14---fri-sep-252020">
-Lesson 14 - Fri, Sep 25,2020
-</h3>
-<p>
+
+[Wed, Sep 23,2020](https://unco.zoom.us/rec/play/6tviND4Ic_6CLZgvqO6Dp5BX4hdfxUnn3VEhMkwdshiz0Gj8BYdnWQNn1pJ1H5dj8UAhv9I-87opqP8.7YDI3_Mqs7wcYNf9)
+
+
+### Lesson 14 - Fri, Sep 25,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 25,2020 2:28 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(86 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/7wznTDsra4nN6VlviGZOKGbRT090EcAhQB8SDh_Jr48qLikl8gusGu7xzDYawr8xV_a0mjrU_Zk6IHcT.Yny2h2nFuIFwPiT1">Fri, Sep 25,2020</a>
-</p>
-<h3 id="lesson-15---mon-sep-282020">
-Lesson 15 - Mon, Sep 28,2020
-</h3>
-<p>
+
+[Fri, Sep 25,2020](https://unco.zoom.us/rec/play/7wznTDsra4nN6VlviGZOKGbRT090EcAhQB8SDh_Jr48qLikl8gusGu7xzDYawr8xV_a0mjrU_Zk6IHcT.Yny2h2nFuIFwPiT1)
+
+
+
+### Lesson 15 - Mon, Sep 28,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 28,2020 2:34 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(76 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/rJjHRmY_xmE12MQCAlTfRgcFlCxza1oa_HQ2sZ0X5rdxmy-jnM1tDZC7sfIdsGSWojdA4svvwMgLQ40O.TzXo3cKN0tcC9mhe">Mon, Sep 28,2020</a>
-</p>
-<h3 id="lesson-16---wed-sep-302020">
-Lesson 16 - Wed, Sep 30,2020
-</h3>
-<p>
+
+[Mon, Sep 28,2020](https://unco.zoom.us/rec/play/rJjHRmY_xmE12MQCAlTfRgcFlCxza1oa_HQ2sZ0X5rdxmy-jnM1tDZC7sfIdsGSWojdA4svvwMgLQ40O.TzXo3cKN0tcC9mhe)
+
+
+### Lesson 16 - Wed, Sep 30,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Sep 30,2020 2:32 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(101 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/bNvsGFTJdzfkrsij3jLTKj0SQ2gE_dhRQc9JAuSDvBeOTaMqJST164egTmcG_Vh_wcNusIA95kvgEro3.9Gf-oxgofMIdXmgA">Wed, Sep 30,2020</a>
-</p>
-<h3 id="lesson-17---fri-oct-22020">
-Lesson 17 - Fri, Oct 2,2020
-</h3>
-<p>
+
+[Wed, Sep 30,2020](https://unco.zoom.us/rec/play/bNvsGFTJdzfkrsij3jLTKj0SQ2gE_dhRQc9JAuSDvBeOTaMqJST164egTmcG_Vh_wcNusIA95kvgEro3.9Gf-oxgofMIdXmgA)
+
+
+
+### Lesson 17 - Fri, Oct 2,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 2,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(71 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/Be75d417wRvlE11jz2ijypmDlMU2QRwCyuE-r_seib-1YRO6xwNwgywBWSyBp6CuYtQHZc9_DQI0lARa.joRpnB3s5BDvbjeO">Fri, Oct 2,2020</a>
-</p>
-<h3 id="lesson-18---mon-oct-52020">
-Lesson 18 - Mon, Oct 5,2020
-</h3>
-<p>
+
+[Fri, Oct 2,2020](https://unco.zoom.us/rec/play/Be75d417wRvlE11jz2ijypmDlMU2QRwCyuE-r_seib-1YRO6xwNwgywBWSyBp6CuYtQHZc9_DQI0lARa.joRpnB3s5BDvbjeO)
+
+
+
+### Lesson 18 - Mon, Oct 5,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 5,2020 2:31 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(97 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/JmOD3LabmkuzNQef1SyfCTrKFVIGHiWTo8mmQV8oZpY95_2PjRPTwnQ2oN9_9uCr8TnkEo-cQ2HpCcx2.Z0NSru2e10SdLFCI">Mon, Oct 5,2020</a>
-</p>
-<h3 id="lesson-19---wed-oct-72020">
-Lesson 19 - Wed, Oct 7,2020
-</h3>
-<p>
+
+[Mon, Oct 5,2020](https://unco.zoom.us/rec/play/JmOD3LabmkuzNQef1SyfCTrKFVIGHiWTo8mmQV8oZpY95_2PjRPTwnQ2oN9_9uCr8TnkEo-cQ2HpCcx2.Z0NSru2e10SdLFCI)
+
+
+### Lesson 19 - Wed, Oct 7,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 7,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(77 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/gL-5mcP8O2cbTbwKlh-UeJMoQqlmvW8lpdV0XHp8J8WccikawwpMd5EgWN_wn76cw5NPgmsLBnFDWKYS.YbTXrvrSRvA5Osm2">Wed, Oct 7,2020</a>
-</p>
-<h3 id="lesson-20---fri-oct-92020">
-Lesson 20 - Fri, Oct 9,2020
-</h3>
-<p>
+
+[Wed, Oct 7,2020](https://unco.zoom.us/rec/play/gL-5mcP8O2cbTbwKlh-UeJMoQqlmvW8lpdV0XHp8J8WccikawwpMd5EgWN_wn76cw5NPgmsLBnFDWKYS.YbTXrvrSRvA5Osm2)
+
+
+### Lesson 20 - Fri, Oct 9,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 9,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(76 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/rSBS1QXqf8tYzJokBiwiUHOevHuQybFFMrrexQ3_Nhi4_JZanxsFbGZS0Whc_SIP4WYsUo3eNzk1DaV3.jmIj0FUFZsHohuDe">Fri, Oct 9,2020</a>
-</p>
-<h3 id="lesson-21---mon-oct-122020">
-Lesson 21 - Mon, Oct 12,2020
-</h3>
-<p>
+
+[Fri, Oct 9,2020](https://unco.zoom.us/rec/play/rSBS1QXqf8tYzJokBiwiUHOevHuQybFFMrrexQ3_Nhi4_JZanxsFbGZS0Whc_SIP4WYsUo3eNzk1DaV3.jmIj0FUFZsHohuDe)
+
+
+### Lesson 21 - Mon, Oct 12,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 12,2020 2:29 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(73 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/Mf3wxY3sttUjbHkv_VRaFuw2KYwygu6_c3rn6B0a8uIhzfFPcDD3D04RxkY6mrX0VJA2EQhz5-al1sw.M6N5JGin9BoGpAOF">Mon, Oct 12,2020</a>
-</p>
-<h3 id="lesson-22---wed-oct-142020">
-Lesson 22 - Wed, Oct 14,2020
-</h3>
-<p>
+
+[Mon, Oct 12,2020](https://unco.zoom.us/rec/play/Mf3wxY3sttUjbHkv_VRaFuw2KYwygu6_c3rn6B0a8uIhzfFPcDD3D04RxkY6mrX0VJA2EQhz5-al1sw.M6N5JGin9BoGpAOF)
+
+
+### Lesson 22 - Wed, Oct 14,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 14,2020 2:31 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(85 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/mBHknNdQhNKRUOZ1qjFnge6bn1TSZFbTGuZ5ULFiHa-HqokhmOFvOgang4Kbhb3fdAojTA3GOvWU58P4.Reha9E1roZ7CEXM8">Wed, Oct 14,2020</a>
-</p>
-<h3 id="lesson-23---fri-oct-162020">
-Lesson 23 - Fri, Oct 16,2020
-</h3>
-<p>
+
+[Wed, Oct 14,2020](https://unco.zoom.us/rec/play/mBHknNdQhNKRUOZ1qjFnge6bn1TSZFbTGuZ5ULFiHa-HqokhmOFvOgang4Kbhb3fdAojTA3GOvWU58P4.Reha9E1roZ7CEXM8)
+
+
+### Lesson 23 - Fri, Oct 16,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 16,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(85 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/mYSVwOabdyQBBGEv-EqIC6YCmLua5Uk_MkDIH2aqH__m2MNmLRqyqbXg7EGhzoQrqkJyf6NzAfyMlKw.gV7IEbMKslhocsBC">Fri, Oct 16,2020</a>
-</p>
-<h3 id="lesson-24---mon-oct-192020">
-Lesson 24 - Mon, Oct 19,2020
-</h3>
-<p>
+
+[Fri, Oct 16,2020](https://unco.zoom.us/rec/play/mYSVwOabdyQBBGEv-EqIC6YCmLua5Uk_MkDIH2aqH__m2MNmLRqyqbXg7EGhzoQrqkJyf6NzAfyMlKw.gV7IEbMKslhocsBC)
+
+
+### Lesson 24 - Mon, Oct 19,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 19,2020 2:30 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(85 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/epcdGcEXhTQxWPzFF3QnR8VmQ8Mg_uzHFwhrSQVUpmXmB_-pt9uXZGa2ejjmJiLn0ya6_OEqxHumQNzt.4_Kc9w3hmvMZAPOt">Mon, Oct 19,2020</a>
-</p>
-<h3 id="lesson-25---wed-oct-212020">
-Lesson 25 - Wed, Oct 21,2020
-</h3>
-<p>
+
+[Mon, Oct 19,2020](https://unco.zoom.us/rec/play/epcdGcEXhTQxWPzFF3QnR8VmQ8Mg_uzHFwhrSQVUpmXmB_-pt9uXZGa2ejjmJiLn0ya6_OEqxHumQNzt.4_Kc9w3hmvMZAPOt)
+
+
+### Lesson 25 - Wed, Oct 21,2020
+
 Topic: BACS350-008 Intermediate Web Dev
-</p>
-<p>
+
 Date:Oct 21,2020 2:31 PM Mountain Time (US and Canada)
-</p>
-<p>
+
 Recording-1(117 MB)
-</p>
-<p>
-<a href="https://unco.zoom.us/rec/play/jJq3It7lSLk7311kCn7IRfxVGAn1KaBdP9tgkqNN07vkzbn7gJ93sCbyYiEe_rvHGJ3S3ewYYUXaQZtJ.AxVL5Ehncim9N1wX">Wed, Oct 21,2020</a>
-</p>
-<pre><code>    &lt;/div&gt;
-&lt;/main&gt;
 
+[Wed, Oct 21,2020](https://unco.zoom.us/rec/play/jJq3It7lSLk7311kCn7IRfxVGAn1KaBdP9tgkqNN07vkzbn7gJ93sCbyYiEe_rvHGJ3S3ewYYUXaQZtJ.AxVL5Ehncim9N1wX)
 
 
 
-
-&lt;footer class=&quot;text-center m-5&quot;&gt;
-    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
-    - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/footer&gt;
-
-
-
-
-
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
-            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
-            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;</code></pre>
-</html>
-<pre><code>    &lt;/div&gt;
-&lt;/main&gt;
-
-
-
-
-
-&lt;footer class=&quot;text-center m-5&quot;&gt;
-    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
-    - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/footer&gt;
-
-
-
-
-
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
-            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
-            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;</code></pre>
-</html>
-
-            
-        </div>
-    </main>
-
-
-
-            
-                
-    <footer class="text-center m-5">
-        &copy;2020 <a href="https://shrinking-world.com">Shrinking World</a>
-        - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </footer>
-
-            
-
-        
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous"></script>
-
-    </body>
-</html>
