@@ -86,56 +86,56 @@
 <li>Read a CSV file</li>
 <li>Print each row</li>
 </ul>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> csv <span class="ch">import</span> reader
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> csv <span class="im">import</span> reader
 
-<span class="kw">with</span> <span class="dt">open</span>(<span class="st">&#39;lessons.csv&#39;</span>) <span class="ch">as</span> f:
-    <span class="kw">for</span> row in reader(f):
-        <span class="dt">print</span>(row)</code></pre>
+<span class="cf">with</span> <span class="bu">open</span>(<span class="st">&#39;lessons.csv&#39;</span>) <span class="im">as</span> f:
+    <span class="cf">for</span> row <span class="kw">in</span> reader(f):
+        <span class="bu">print</span>(row)</code></pre></div>
 <h3 id="python-csv-writer">Python CSV Writer</h3>
 <ul>
 <li>Take in a table (rows, columns)</li>
 <li>Write a CSV file</li>
 </ul>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> csv
-<span class="kw">with</span> <span class="dt">open</span>(<span class="st">&#39;lessons.csv&#39;</span>, <span class="st">&#39;w&#39;</span>, newline=<span class="st">&#39;&#39;</span>) <span class="ch">as</span> f:
-    writer = csv.writer(f)
-    writer.writerows(table)</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> csv
+<span class="cf">with</span> <span class="bu">open</span>(<span class="st">&#39;lessons.csv&#39;</span>, <span class="st">&#39;w&#39;</span>, newline<span class="op">=</span><span class="st">&#39;&#39;</span>) <span class="im">as</span> f:
+    writer <span class="op">=</span> csv.writer(f)
+    writer.writerows(table)</code></pre></div>
 <h3 id="read-from-string">Read from String</h3>
 <ul>
 <li>Read a CSV file</li>
 <li>Print each row</li>
 </ul>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> csv <span class="ch">import</span> reader
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> csv <span class="im">import</span> reader
 
-csv_string = <span class="st">&#39;&#39;&#39;bacs350,27,2020-10-26,10,Base Template</span>
+csv_string <span class="op">=</span> <span class="st">&#39;&#39;&#39;bacs350,27,2020-10-26,10,Base Template</span>
 <span class="st">bacs350,28,2020-10-28,10,Template Includes</span>
 <span class="st">bacs350,29,2020-10-30,10,Card Views</span>
 <span class="st">bacs350,30,2020-11-02,11,Markdown View</span>
 <span class="st">bacs350,31,2020-11-04,11,Table View</span>
 <span class="st">&#39;&#39;&#39;</span>
 
-rows = csv_string.split(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)
+rows <span class="op">=</span> csv_string.split(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)
 
-<span class="kw">for</span> row in reader(rows):
-    <span class="dt">print</span>(row)</code></pre>
+<span class="cf">for</span> row <span class="kw">in</span> reader(rows):
+    <span class="bu">print</span>(row)</code></pre></div>
 <h3 id="view-logic">View Logic</h3>
 <ul>
 <li>Read the CSV file</li>
 <li>Pass the table to the template</li>
 </ul>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> TableView(TemplateView):
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> TableView(TemplateView):
     
-    <span class="kw">def</span> get_context_data(<span class="ot">self</span>, **kwargs):
-        <span class="kw">return</span> <span class="dt">dict</span>(table=read_lesson_table(<span class="st">&#39;lessons.csv&#39;</span>))
+    <span class="kw">def</span> get_context_data(<span class="va">self</span>, <span class="op">**</span>kwargs):
+        <span class="cf">return</span> <span class="bu">dict</span>(table<span class="op">=</span>read_lesson_table(<span class="st">&#39;lessons.csv&#39;</span>))
     
 <span class="kw">def</span> read_lesson_table(path):
-    <span class="kw">return</span> reader(<span class="dt">open</span>(path))</code></pre>
+    <span class="cf">return</span> reader(<span class="bu">open</span>(path))</code></pre></div>
 <h3 id="table-template">Table Template</h3>
 <ul>
 <li>Create templates to display the data</li>
 <li>Iterate over rows and columns</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;table&gt;</span>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;table&gt;</span>
     {% for row in table %}
         <span class="kw">&lt;tr&gt;</span>
             {% for column in row %}
@@ -145,7 +145,7 @@ rows = csv_string.split(<span class="st">&#39;</span><span class="ch">\n</span><
             {% endfor %}
         <span class="kw">&lt;/tr&gt;</span>
     {% endfor %}
-<span class="kw">&lt;/table&gt;</span></code></pre>
+<span class="kw">&lt;/table&gt;</span></code></pre></div>
 <h3 id="consolidate-document-files">Consolidate Document Files</h3>
 <ul>
 <li>Create Documents directory</li>

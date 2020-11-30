@@ -102,7 +102,7 @@
 <li>Add block for Content</li>
 <li>templates/page_theme.html</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html">    <span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">    <span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
     <span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>
         <span class="kw">&lt;head&gt;</span>
             <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span><span class="kw">&gt;</span>
@@ -116,17 +116,17 @@
                 <span class="kw">&lt;h2&gt;</span>No Block Defined<span class="kw">&lt;/h2&gt;</span>
             {% endblock content %}
         <span class="kw">&lt;/body&gt;</span>
-    <span class="kw">&lt;/html&gt;</span></code></pre>
+    <span class="kw">&lt;/html&gt;</span></code></pre></div>
 <h3 id="page-template">Page Template</h3>
 <ul>
 <li>The template can be extended to replace the &quot;{% block content %}&quot;.</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html">{% extends &#39;page_theme.html&#39; %}
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">{% extends &#39;page_theme.html&#39; %}
 
 {% block content %}
     <span class="kw">&lt;h2&gt;</span>About Us<span class="kw">&lt;/h2&gt;</span>
     <span class="kw">&lt;p&gt;</span>This is all about us!<span class="kw">&lt;/p&gt;</span>
-{% endblock content %}</code></pre>
+{% endblock content %}</code></pre></div>
 <h3 id="header-main-footer">Header, Main, Footer</h3>
 <ul>
 <li>Add header, main, footer</li>
@@ -136,7 +136,7 @@
 <ul>
 <li>Define blocks - Header, Main, Footer</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
 <span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;head&gt;</span>
         <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span><span class="kw">&gt;</span>
@@ -163,13 +163,13 @@
         {% endblock content %}
 
     <span class="kw">&lt;/body&gt;</span>
-<span class="kw">&lt;/html&gt;</span></code></pre>
+<span class="kw">&lt;/html&gt;</span></code></pre></div>
 <h3 id="menu">Menu</h3>
 <ul>
 <li>Extend base template</li>
 <li>Add block Navbar</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
 <span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;head&gt;</span>
         <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span><span class="kw">&gt;</span>
@@ -199,14 +199,14 @@
         {% endblock content %}
 
     <span class="kw">&lt;/body&gt;</span>
-<span class="kw">&lt;/html&gt;</span></code></pre>
+<span class="kw">&lt;/html&gt;</span></code></pre></div>
 <h3 id="bootstrap-navs">Bootstrap Navs</h3>
 <ul>
 <li>Use class &quot;nav&quot; on list</li>
 <li>Use class &quot;nav-item&quot; on each list item</li>
 <li>Use class &quot;nav-link&quot; on each link element</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;nav&quot;</span><span class="kw">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;nav&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item&quot;</span><span class="kw">&gt;</span>
         <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;nav-link active&quot;</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Home<span class="kw">&lt;/a&gt;</span>
     <span class="kw">&lt;/li&gt;</span>
@@ -216,12 +216,12 @@
     <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item&quot;</span><span class="kw">&gt;</span>
         <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;nav-link&quot;</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Profile<span class="kw">&lt;/a&gt;</span>
     <span class="kw">&lt;/li&gt;</span>
-<span class="kw">&lt;/ul&gt;</span></code></pre>
+<span class="kw">&lt;/ul&gt;</span></code></pre></div>
 <h3 id="data-in-menu">Data in Menu</h3>
 <ul>
 <li>Pass in variables for menu items</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;navbar-nav ml-auto&quot;</span><span class="kw">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;navbar-nav ml-auto&quot;</span><span class="kw">&gt;</span>
 
     {% for i in menu.menu_items %}
         <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item {{ i.active }}&quot;</span><span class="kw">&gt;</span>
@@ -229,13 +229,13 @@
         <span class="kw">&lt;/li&gt;</span>
     {% endfor %}
 
-<span class="kw">&lt;/ul&gt;</span></code></pre>
+<span class="kw">&lt;/ul&gt;</span></code></pre></div>
 <h3 id="user-info">User Info</h3>
 <ul>
 <li>Show login status</li>
 <li>Links to login/logout</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html">{% block user %}
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">{% block user %}
     {% if user.is_authenticated %}
         <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item active&quot;</span><span class="kw">&gt;</span>
             <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nav-link&quot;</span><span class="kw">&gt;</span>Welcome {{ user.username }}<span class="kw">&lt;/span&gt;</span>
@@ -256,7 +256,7 @@
             <span class="kw">&lt;/a&gt;</span>
         <span class="kw">&lt;/li&gt;</span>
     {% endif %}
-{% endblock user %}</code></pre>
+{% endblock user %}</code></pre></div>
 <h3 id="demo-code">Demo Code</h3>
 <ul>
 <li><a href="https://github.com/Mark-Seaman/UNC-BACS-350/tree/master/demo/week10/Demo27">Demo 27</a></li>

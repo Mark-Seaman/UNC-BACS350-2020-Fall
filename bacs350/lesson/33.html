@@ -51,24 +51,24 @@
 <li>Copy code from Bootstrap demo</li>
 <li>Add images to Carousel</li>
 </ul>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> CarouselView(TemplateView):
-    template_name = <span class="st">&#39;carousel.html&#39;</span></code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> CarouselView(TemplateView):
+    template_name <span class="op">=</span> <span class="st">&#39;carousel.html&#39;</span></code></pre></div>
 <h3 id="carousel-page">Carousel Page</h3>
 <ul>
 <li>Create a template to display the data</li>
 </ul>
 <p>templates/carousel.html</p>
-<pre class="sourceCode html"><code class="sourceCode html">{% extends &#39;workshop.html&#39; %}
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">{% extends &#39;workshop.html&#39; %}
 
 {% block main %}
     {% include &#39;_carousel.html&#39; %}
-{% endblock main %}</code></pre>
+{% endblock main %}</code></pre></div>
 <h3 id="carousel-template">Carousel Template</h3>
 <ul>
 <li>Define the partial template</li>
 </ul>
 <p>templates/_carousel.html</p>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;slider2&quot;</span><span class="ot"> class=</span><span class="st">&quot;carousel slide&quot;</span><span class="ot"> data-ride=</span><span class="st">&quot;carousel&quot;</span><span class="kw">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;slider2&quot;</span><span class="ot"> class=</span><span class="st">&quot;carousel slide&quot;</span><span class="ot"> data-ride=</span><span class="st">&quot;carousel&quot;</span><span class="kw">&gt;</span>
            
     <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;carousel-inner&quot;</span><span class="kw">&gt;</span>
         <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;carousel-item active&quot;</span><span class="kw">&gt;</span>
@@ -93,7 +93,7 @@
     <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#slider2&quot;</span><span class="ot"> class=</span><span class="st">&quot;carousel-control-next&quot;</span><span class="ot"> data-slide=</span><span class="st">&quot;next&quot;</span><span class="kw">&gt;</span>
         <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;carousel-control-next-icon&quot;</span><span class="kw">&gt;&lt;/span&gt;</span>
     <span class="kw">&lt;/a&gt;</span>
-<span class="kw">&lt;/div&gt;</span></code></pre>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
 <h3 id="carousel-javascript">Carousel JavaScript</h3>
 <ul>
 <li>Logic to run the carousel</li>
