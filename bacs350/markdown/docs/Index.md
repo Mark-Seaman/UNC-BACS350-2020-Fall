@@ -12,30 +12,39 @@ Here are the skills that you need for success.
 
 ## BACS 350
 
-* [Welcome BACS350](Welcome)
-* [Welcome Guest](Guest)
-* [Zoom Lectures](ZoomLectures)
-* [Course](Course)
+* [Welcome to BACS350](Overview.html)
+* [Zoom Lectures](ZoomLectures.html)
+* [Course](Course.html)
 
 
 ## Django
 
-* [What Is Django?](WhatIsDango.md)
-* [Setup Python](SetupPython.md)
-* [New Project](NewProject.md)
-* [Fix Git Repo](FixGitRepo.md)
+* [What Is Django?](WhatIsDango.html)
+* [Setup Python](SetupPython.html)
+* [New Project](NewProject.html)
+* [Fix Git Repo](FixGitRepo.html)
 
 
 ## Github
 
-* [Register a Github account](GithubAccount.md)
-* [Create a Github repository](GithubRepo.md)
-* [Publish Github Pages](GithubPages.md)
-* [Command Line](CommandLine.md)
+* [Register a Github account](GithubAccount.html)
+* [Create a Github repository](GithubRepo.html)
+* [Publish Github Pages](GithubPages.html)
+* [Home Page](HomePage.html)
 
 
 ## Web App Hosting
-* [Python Anywhere](PythonAnywhere.md)
-* [Python Anywhere Demo Video](PythonAnywhereDemo.md)
-* [App Deployment](AppDeployment.md)
+* [Python Anywhere](PythonAnywhere.html)
+* [Python Anywhere Demo Video](PythonAnywhereDemo.html)
+* [App Deployment](AppDeployment.html)
+* [Command Line](CommandLine.html)
+
+
+## Resources
+
+* [Course Website](CourseWebsite.html)
+* [Learning Resources](LearningResources.html)
+* [Tips and Tricks](TipsTricks.html)
+* [Other Courses](https://shrinking-world.com)
+
 
