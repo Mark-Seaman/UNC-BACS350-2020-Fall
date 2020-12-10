@@ -1,200 +1,87 @@
-# UNC BACS 350 - Web Apps with Python and Django
+# Building Web Apps (with Python and Django and MySQL)
 
-Demo Code
+University of Northern Colorado
 
+Monfort College of Business
 
-### Week 1 - Development Tools
-    
-app01 - Setup development tools
+Business Administration Computer Science
 
-    Lesson 1. Setup Django
-    
-app02 - First project
-    
-    Lesson 2. Django Projects & Apps
+UNC BACS 350 - Web Apps with Python and Django
 
-app03 - App structure
+![](bacs350/images/treetops.800.jpg)
 
-    Lesson 3. Django App Structure
+---
 
-     
-     
-### Week 2 - Home Page
+## Shrinking World
 
-app04 - Python Anywhere
+This class is a part of the Web Development series developed 
+by Mark Seaman at [Shrinking World Training](https://shrinking-world.com).
 
-    Lesson 4. Python Anywhere
+Available courses
 
-app05 - Static Server
-    
-    Lesson 5. apps, urls, views, templates
- 
- 
-### Week 3 - View Inheritance
+* Web Development 1 - Web Pages with HTML  - UNC BACS 200
+* Web Development 2 - Web Apps with Python - UNC BACS 350
+* Web Development 3 - Software Engineering - UNC CS 350
 
-app06 - Template View
+At Shrinking World we believe that it is a small world after all.
+To succeed today you must understand web-based communication and
+technology as well as changing social norms.
 
-    Lesson 6. Simple Template View
-    
-app07 - Display data in views
-        
-    Lesson 7. Variable Insertion
-    
-app08 - Blog Page
-
-    Lesson 8. Blog Page 
+Web Communication is the new business literacy
 
 
-### Later Weeks
+---
 
-    Page Navigation
-    
-        Menus
-        View Templates
-            Document View
-            Table
-            Cards
-            Tabs
-            Accordion
-            Markdown
-            DocFileIndex
-            DocList
-        Composite Views
-        
-    Admin Views
-    
-        User data model
-        Article data model
-        Editing models
-        
-    Article View
-    
-        TemplateView, RedirectView
-        ListView, 
-        DetailsView
-        
-    Edit View
-    
-        CRUD
-        List, Detail
-        Edit, Delete
-    
-    Data Model
-    
-        ORM
-        Migration
-        CRUD
-        
-    Forms
-    
-        FormView - CSRF
-        GET - POST
-        validation & errors
-        
-    User Auth
-    
-        Register
-        Login
-        Logout
-        
-    Bootstrap
-    
-        Menus
-        Grid layout
-        Widgets
-        
-    Import/Export
-    
-        CSV reader
-        CSV writer
-        Table Display
-    
-    Markdown
-    
-        Render markdown as HTML
-        Images and static data
-        Files/database
-        
-    Student Selection
-    
-        Blog comments
-        Slide show
-        Image gallery
-        Customer orders
-   
-    
-PROJECT PLAN
+## Overview
 
-    Development Tools
-        Setup Django
-        Github
-        Python Anywhere
-        
-    Home Page
-        Django App Hosting
-        apps, urls, views
-        templates
-        
-    View Inheritance
-        Simple Template View
-        Variable Insertion
-        blog.html
-        blog.css
-        bootstrap
+UNC BACS 350 - Web Apps with Python and Django
 
-    Page Navigation
-        index.html, author.html
-        articles.html
-        article.html
-    
-    Admin Views
-        User data model
-        Article data model
-        Editing models
-        
-    Article View
-        TemplateView, RedirectView
-        ListView, 
-        DetailsView
-        
-    Edit View
-        CRUD
-        List, Detail
-        Edit, Delete
-    
-    Data Model
-        ORM
-        migration
-        CRUD
-        
-    Forms
-        FormView - CSRF
-        GET - POST
-        validation & errors
-        
-    User Auth
-        register
-        login
-        logout
-        
-    Bootstrap
-        Menus
-        Grid layout
-        Widgets
-        
-    Import/Export
-        CSV reader
-        CSV writer
-        Table Display
-        data files
-    
-    Markdown
-        render markdown as HTML
-        images and static data
-        files/database
-        
-    Student Selection
-        Blog comments
-        Slide show
-        Image gallery
-        Customer orders
+* Python Language & Django web framework
+* Setup Development Tools
+* Web Hosting at Python Anywhere
+* Application structure (Data, Views, Tests)
+* Reusable Views
+* Data models and database code
+* Test-driven development
+* User administration
+
+
+This class teaches techniques by having students build projects each week.
+Concepts and techniques taught in the class help the students learn what they
+need to successfully complete each project.
+
+This class is intended to cover one college semester but could easily be compressed.
+Mastering this content will range from 50 to 100 total hours of effort.
+
+---
+
+## Github Repo
+
+This [Github Repo](https://github.com/Mark-Seaman/UNC-BACS-350) contains the full course
+in website form.  
+
+14 projects require students to demonstrate all of the critical skills for building web
+pages.  Detailed instructions and requirements are given for students to follow.
+
+42 lessons are available as notes and slides on this course website.  Each lesson comes 
+with demo code that can be viewed and modified by the students.
+
+42 video lecture will be available by January of 2020.  These videos will be linked to
+this repo for easy access.  The videos will be served off a video streaming service at
+Shrinking World.
+
+To get started with this course just go to the 
+[Github Repo](https://github.com/Mark-Seaman/UNC-BACS-350) and clone the files onto
+your computer. Poke the big green "Code" button.
+
+To refresh your copy of the code just "Pull" code at any time.
+
+---
+
+## Use the Website
+
+Once you have cloned the repo you have a copy of the full website on your computer.  No server is required to host the files and view the pages on your own computer.
+
+Start browsing the website by finding the files on your local computer and double-clicking
+the "bacs350/index.html" file.
+
